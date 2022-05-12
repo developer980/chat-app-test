@@ -52,13 +52,12 @@ class App extends React.Component {
   updateUsers(users) {
     this.setState({ users: users });
   }
+  // func();
 
   render() {
     const { history } = this.props;
-    // console.log(this.props);
-    // console.log(this.state.users);
     console.log(this.state);
-    //  readContacts(this.props.user);
+    console.log(this.props);
     return (
       <div className="app">
         <Switch>
@@ -76,8 +75,6 @@ class App extends React.Component {
               />
             )}
           ></Route>
-          <Route path="/signIn"></Route>
-          <Route path="/file" component={File}></Route>
         </Switch>
       </div>
     );
@@ -95,29 +92,36 @@ let from;
 let to;
 let contactList = [];
 let contacts_length = 0;
+let display = "";
+
+export function changeDisplay(val) {
+  display = val;
+}
 
 mesRef.on("value", (snapshot) => {
-  mesArray = [];
-  snapshot.forEach(function (childSnapshot) {
-    const text = childSnapshot.val().text;
-    const key = childSnapshot.key;
-    from = childSnapshot.val().from;
-    to = childSnapshot.val().to;
-    mesArray.push({
-      text,
-      from,
-      to,
-      key,
+  if (window.mainComponent.props.user) {
+    mesArray = [];
+    snapshot.forEach(function (childSnapshot) {
+      const text = childSnapshot.val().text;
+      const key = childSnapshot.key;
+      from = childSnapshot.val().from;
+      to = childSnapshot.val().to;
+      mesArray.push({
+        text,
+        from,
+        to,
+        key,
+      });
+      if (window.mainComponent.props.user.uid == childSnapshot.val().to) {
+        addContact(
+          childSnapshot.val().from_name,
+          window.mainComponent.props.user.uid,
+          childSnapshot.val().from
+        );
+      }
     });
-    if (window.mainComponent.props.user.uid == childSnapshot.val().to) {
-      addContact(
-        childSnapshot.val().from_name,
-        window.mainComponent.props.user.uid,
-        childSnapshot.val().from
-      );
-    }
-  });
-  window.mainComponent.updateList(mesArray);
+    window.mainComponent.updateList(mesArray);
+  }
 });
 
 const userRef = db.ref("/users");
@@ -125,6 +129,7 @@ let userList = [];
 
 userRef.on("value", (snapshot) => {
   length = 0;
+  userList = [];
   snapshot.forEach(function (childSnapshot) {
     const name = childSnapshot.val().name;
     const id = childSnapshot.val().id;
@@ -134,11 +139,10 @@ userRef.on("value", (snapshot) => {
     });
   });
   window.mainComponent.setState({ users: userList });
-  if (window.mainComponent.props.user) {
-    uid = window.mainComponent.props.user.uid;
-  }
+  // if (window.mainComponent.props.user) {
+  //   uid = window.mainComponent.props.user.uid;
+  // }
 });
-//function readContacts(user) {
 
 db.ref(`/contacts`).on("value", (snapshot) => {
   if (window.mainComponent.props.user) {
@@ -166,7 +170,7 @@ export function writeUserInfo() {
         const id = childSnapshot.val().id;
         if (id == window.mainComponent.props.user.uid) {
           length++;
-          console.log(childSnapshot.val());
+          console.log(length);
         }
       });
     });
