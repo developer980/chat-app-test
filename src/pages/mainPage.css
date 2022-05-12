@@ -1,0 +1,27 @@
+html, body{
+    height:100%;
+}
+
+.main{
+    height:100%;
+}
+
+.content{
+    width:100%;
+    position:absolute;
+    top: 100px;
+    left:0;
+    right:0;
+    bottom:0;
+    display:flex;
+    flex-direction: row;
+}
+
+.layout{
+    height:100%;
+}
+.placeHolder{
+    margin: auto;
+    height: 70%;
+    filter: invert(80%)
+}

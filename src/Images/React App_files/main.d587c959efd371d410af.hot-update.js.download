@@ -1,0 +1,54 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/components/Layout.jsx":
+/*!***********************************!*\
+  !*** ./src/components/Layout.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ "./src/components/header.jsx");
+/* harmony import */ var _Layout_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout.css */ "./src/components/Layout.css");
+/* harmony import */ var _Layout_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Layout_css__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\Layout.jsx";
+
+
+
+
+function Layout(props) {
+  const {
+    user,
+    signOut,
+    userList
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "layout",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    user: user,
+    userList: userList,
+    signOut: signOut,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 13
+    }
+  }), props.children);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.d587c959efd371d410af.hot-update.js.map

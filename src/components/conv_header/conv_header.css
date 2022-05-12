@@ -1,0 +1,25 @@
+.conv-header{
+    height:9.5%;
+    width:100%;
+    background-color: rgb(237, 237, 237);
+    border-bottom:0.5px solid rgb(213, 212, 212);
+    color:rgb(106, 106, 106);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* .username{
+} */
+
+.user-profile-pic{
+    margin-left: 2%;
+    height: 60%;
+    margin-right: 10px;
+    filter: invert(30%) sepia(10%) saturate(1352%)
+     hue-rotate(120deg) brightness(180%) 
+     contrast(100%);
+     /* margin-top: 3px; */
+}

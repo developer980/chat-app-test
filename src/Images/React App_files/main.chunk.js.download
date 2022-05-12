@@ -1,0 +1,3606 @@
+(this["webpackJsonptalk"] = this["webpackJsonptalk"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/App.css ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "html, body{\n  height:100%;\n}\n\n.App {\n  text-align: center;\n  height:100%;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Layout.css":
+/*!**************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/Layout.css ***!
+  \**************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "html, body{\r\n    height:100%;\r\n}\r\n.layout{\r\n    height:100%;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/chatSection/chatSection.css":
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/chatSection/chatSection.css ***!
+  \*******************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".chat-section{\r\n    width:80%;\r\n    height:100%;\r\n    border-left:0.25px solid rgb(209, 209, 209);\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/contact/contact_item.css":
+/*!****************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/contact/contact_item.css ***!
+  \****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".contactItem{\r\n    width:100%;\r\n    background-color: white;\r\n    height:100px;\r\n    color: rgb(94, 94, 94);\r\n     /* padding-top: 15px;\r\n    padding-bottom: 15px;  */\r\n    /* padding-left: 5%;\r\n    padding-right: 40%; */\r\n    border:none;\r\n    border-bottom: 0.25px solid rgb(184, 184, 184);\r\n    border-right: 0.25px solid rgb(209, 209, 209);\r\n    /*  display: flex;\r\n    flex-direction: row;\r\n    align-items: center; */\r\n    justify-content: left;\r\n    align-content: center;\r\n    grid-auto-flow: column;\r\n   display:grid;\r\n    grid-template-areas:\r\n    'profilePic name'\r\n    'profilePic message';\r\n    align-items: center;\r\n    font-size: 20px;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n    transition:all 0.25s;\r\n    grid-gap: 10px;\r\n    gap: 10px;\r\n    overflow: hidden;\r\n}\r\n\r\n.contactItem >div, img{\r\n    /* border: 1px solid black; */\r\n    text-align: left;\r\n}\r\n\r\n.contactItem:hover{\r\n    background-color: rgb(244, 244, 244);\r\n}\r\n\r\n.contact-profile{\r\n    height: 50px;\r\n    /* margin-right: 10px; */\r\n    filter: invert(30%) sepia(10%) saturate(1352%)\r\n     hue-rotate(120deg) brightness(180%) \r\n     contrast(100%);\r\n     margin-left: 15%;\r\n}\r\n.item1{\r\n    grid-area:profilePic;\r\n}\r\n.item2{\r\n    grid-area:name;\r\n    margin-left: 0px;\r\n    overflow: hidden;\r\n    overflow: hidden;\r\n    white-space: nowrap;\r\n}\r\n.item3{\r\n    grid-area:message;\r\n    margin-left: 0px;\r\n    font-weight: lighter;\r\n    color: rgb(151, 151, 151);\r\n    font-size: 17px;\r\n    overflow: hidden;\r\n    white-space: nowrap;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/contacts_section.css":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/contacts_section.css ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".contacts{\r\n    width:20%;\r\n    height:100%;\r\n    background-color: rgb(223, 223, 223);\r\n    display: flex;\r\n    flex-direction: column;\r\n    overflow-y: auto;\r\n}\r\n.search-input{\r\n    /* background-color: rgb(231, 231, 231);\r\n    height:12.2px;\r\n    padding-top: 30px;\r\n    padding-bottom: 30px;\r\n    padding-left: 15px; */\r\n    color: rgb(134, 134, 134);\r\n    border:none;\r\n    background: none;\r\n    border-bottom: 0.25px solid rgb(209, 209, 209);\r\n    border-right: 0.25px solid rgb(209, 209, 209);\r\n    display: flex;\r\n    margin-left:15px;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    font-size: 20px;\r\n    font-weight: bold;\r\n    width: 100%;\r\n    border:none;\r\n}\r\n\r\n.search-input:focus{\r\n    outline-width: 0;\r\n}\r\n\r\n.search-section{\r\n    background-color: rgb(231, 231, 231);\r\n    /* height:12.25px; */\r\n    \r\n    height:9.5%;\r\n    border-bottom: 0.25px solid rgb(209, 209, 209);\r\n    border-right: 0.25px solid rgb(209, 209, 209);\r\n    display: flex;\r\n    align-items: center;\r\n    font-size: 20px;\r\n    font-weight: bold;\r\n    /* width: 100%; */\r\n}\r\n\r\n.iii{\r\n    height: 100%;\r\n}\r\n\r\n.clear-btn{\r\n    border: none;\r\n    background:none;\r\n    cursor: pointer;\r\n}\r\n\r\n.close-icon{\r\n    width: 15px;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/conv_header/conv_header.css":
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/conv_header/conv_header.css ***!
+  \*******************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".conv-header{\r\n    height:9.5%;\r\n    width:100%;\r\n    background-color: rgb(237, 237, 237);\r\n    border-bottom:0.5px solid rgb(213, 212, 212);\r\n    color:rgb(106, 106, 106);\r\n    font-size: 20px;\r\n    font-weight: bold;\r\n    margin-top: 0px;\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n/* .username{\r\n} */\r\n\r\n.user-profile-pic{\r\n    margin-left: 2%;\r\n    height: 60%;\r\n    margin-right: 10px;\r\n    filter: invert(30%) sepia(10%) saturate(1352%)\r\n     hue-rotate(120deg) brightness(180%) \r\n     contrast(100%);\r\n     /* margin-top: 3px; */\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/header.css":
+/*!**************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/header.css ***!
+  \**************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "nav{\r\n    margin-left:0px;\r\n    margin-right:0px;\r\n    display:flex;\r\n    flex-direction:row;\r\n    height:100px;\r\n    background-color: rgb(61, 186, 144);\r\n}\r\n\r\nnav > button{\r\n    text-decoration:none;\r\n    background:none;\r\n    border:none;\r\n    margin-bottom: 30px;\r\n    cursor: pointer;\r\n}\r\n\r\n.me{\r\n    margin-top: 30px;\r\n    font-weight: bold;\r\n    color:white;\r\n    font-size: 30px;\r\n}\r\n\r\n.myIcon{\r\n    margin:15px;\r\n    filter: invert(30%) sepia(10%) saturate(1352%)\r\n     hue-rotate(120deg) brightness(180%) \r\n     contrast(100%);\r\n}\r\n/* header{\r\n    display:flex;\r\n    flex-direction: column;\r\n} */", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/message_input/message-input.css":
+/*!***********************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/message_input/message-input.css ***!
+  \***********************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".m-input{\r\n    width: 100%;\r\n    height: 10%;\r\n    background-color: rgb(237, 237, 237);\r\n    border-top:0.5px solid rgb(213, 212, 212);\r\n    display:flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.message{\r\n    width:70%;\r\n    /* margin-left:2%; */\r\n    /* margin-top: 2.5%;\r\n    margin-bottom: 2.5%; */\r\n    height: 60%;\r\n    background-color: rgb(217, 217, 217);\r\n    border:0.5px solid rgb(149, 149, 149);\r\n    color:rgb(96, 96, 96);\r\n    font-size: 15px;\r\n    border-radius:50px;\r\n    padding-left: 10px;\r\n}\r\n\r\n.send-btn{\r\n     /* margin-top: 30px;\r\n    margin-bottom: 30px;  */\r\n    /* width: 70%; */\r\n    height: 70%;\r\n    border:none;\r\n    cursor: pointer;\r\n}\r\n\r\n.send-icon{\r\n    \r\n    width: 100%;\r\n    height: 100%;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/messages.css":
+/*!****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/messages.css ***!
+  \****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".messages{\r\n    height:79.9%;\r\n    width:100%;\r\n    display:flex;\r\n    flex-direction: column-reverse;\r\n    background-color: white;\r\n    overflow-y: auto;\r\n}\r\n.div{\r\n    width: 300px;\r\n    height:-moz-fit-content;\r\n    height:fit-content;\r\n    background-color: rgb(240, 142, 14);\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/myMessage.css":
+/*!*****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/myMessage.css ***!
+  \*****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".my-message{\r\n    padding-top:5px;\r\n    padding-bottom:5px;\r\n    padding-left:10px;\r\n    padding-right:10px;\r\n    width:-moz-fit-content;\r\n    width:fit-content;\r\n    height:-moz-fit-content;\r\n    height:fit-content;\r\n    display: block;\r\n    max-width: 500px;\r\n    color:white;\r\n    background-color: #3dba90;\r\n    border-radius: 5px;\r\n    font-size: 30px;\r\n    margin: 5px;\r\n    float:right;\r\n    box-sizing: border-box;\r\n    /* display:flex;\r\n    flex-direction: column; */\r\n    white-space: wrap;\r\n    /* height:300px; */\r\n    overflow:initial;\r\n    word-wrap: break-word;\r\n}\r\n\r\n.message-set{\r\n    display:flex;\r\n    float:right\r\n}\r\n.delete{\r\n    /* height:50%; */\r\n    border:none;\r\n    background: none;\r\n    display: none;\r\n}\r\n\r\n.remove-btn{\r\n    width:15px;\r\n}\r\n\r\n.message-set:hover > button{\r\n    display: inline;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/otherMessage.css":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/otherMessage.css ***!
+  \********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".other-message{\r\n    padding-top:5px;\r\n    padding-bottom:5px;\r\n    padding-left:10px;\r\n    padding-right:10px;\r\n    width:-moz-fit-content;\r\n    width:fit-content;\r\n    max-width: 500px;\r\n    color:rgb(87, 87, 87);\r\n    background-color: #d7d7d7;\r\n    display: block;\r\n    border-radius: 5px;\r\n    font-size: 30px;\r\n    margin: 5px;\r\n    float:left;\r\n}\r\n.message-components{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: left;\r\n}\r\n.sender-name{\r\n    font-size: 15px;\r\n    color: #8a8a8a;\r\n    margin-left:10px;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/signIn/signIn.css":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/signIn/signIn.css ***!
+  \*********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "form{\r\n    display:flex;\r\n    margin-left:40%;\r\n    margin-right:40%;\r\n    margin-top:5%;\r\n    flex-direction: column;\r\n}\r\n\r\n.signin-screen{\r\n    position: absolute;\r\n    left:0;\r\n    right:0;\r\n    bottom:0;\r\n    top:0;\r\n    background-image: linear-gradient(30deg, rgb(58, 82, 74), rgb(160, 255, 223));\r\n}\r\n\r\n.form-input{\r\n    padding:10px;\r\n    border:1px solid rgb(185, 185, 185);\r\n    background-color: rgb(223, 223, 223);\r\n    color:rgb(110, 110, 110);\r\n    border-radius: 20px;\r\n}\r\n\r\n.signin-btn{\r\n    text-decoration: none;\r\n    border:none;\r\n    background-color:rgb(255, 255, 255);\r\n    /* position: absolute;\r\n    right:40%;\r\n    left:40%;\r\n    top:40%;\r\n    bottom:40%; */\r\n    height:100px;\r\n    color:rgb(111, 111, 111);\r\n    border-radius: 10px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-weight: bold;\r\n    font-size: 20px;\r\n    transition:all 0.25s;\r\n    margin-top:30px;\r\n    cursor: pointer;\r\n}\r\n\r\n.signin-section{\r\n    position:absolute;\r\n    left:40%;\r\n    right:40%;\r\n    top:auto;\r\n    height:-moz-fit-content;\r\n    height:fit-content;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: space-around;\r\n}\r\n\r\n.title{\r\n    font-size: 120px;\r\n    font-weight: bold;\r\n    color:white;\r\n}\r\n\r\n.signin-btn:hover{\r\n    background-color:rgb(231, 231, 231);\r\n    /* border:2px solid rgba(61, 186, 144, 0); */\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/userItem.css":
+/*!****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/userItem.css ***!
+  \****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".userItem{\r\n    width:100%;\r\n    background-color: white;\r\n    height:100px;\r\n    color: rgb(94, 94, 94);\r\n    padding-top: 35px;\r\n    padding-bottom: 35px;\r\n    padding-left: 15px;\r\n    border:none;\r\n    border-bottom: 0.25px solid rgb(184, 184, 184);\r\n    border-right: 0.25px solid rgb(209, 209, 209);\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    font-size: 20px;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n    transition:all 0.25s;\r\n}\r\n\r\n.userItem:hover{\r\n    background-color: rgb(244, 244, 244);\r\n}\r\n\r\n.user-profile{\r\n    width: 30px;\r\n    margin-right: 10px;\r\n    filter: invert(30%) sepia(10%) saturate(1352%)\r\n     hue-rotate(120deg) brightness(180%) \r\n     contrast(100%);\r\n     margin-top: 3px;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "html{\n  height:100%;\n}\nbody {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  height:100%;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/mainPage.css":
+/*!***********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/pages/mainPage.css ***!
+  \***********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "html, body{\r\n    height:100%;\r\n}\r\n\r\n.main{\r\n    height:100%;\r\n}\r\n\r\n.content{\r\n    width:100%;\r\n    position:absolute;\r\n    top: 100px;\r\n    left:0;\r\n    right:0;\r\n    bottom:0;\r\n    display:flex;\r\n    flex-direction: row;\r\n}\r\n\r\n.layout{\r\n    height:100%;\r\n}\r\n.placeHolder{\r\n    margin: auto;\r\n    height: 70%;\r\n    filter: invert(80%)\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/profile/profile.css":
+/*!******************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/pages/profile/profile.css ***!
+  \******************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".profile-pic{\r\n    width:100%;\r\n    margin:auto;\r\n    text-align: center;\r\n    position: relative;\r\n    margin-top: 0;\r\n    overflow: auto;\r\n}\r\n\r\n.profile{\r\n    display:flex;\r\n    flex-direction:column;\r\n    align-items: center;\r\n}\r\n\r\n.image{\r\n    width: 40%;\r\n    filter: invert(30%) sepia(10%) saturate(1352%)\r\n     hue-rotate(120deg) brightness(180%) \r\n     contrast(100%);\r\n}\r\n\r\n.background{\r\n    background-color: brown;\r\n    width:100%;\r\n    height:100%;\r\n    position:absolute;\r\n}\r\n\r\n.name{\r\n    margin:auto;\r\n    text-align: center;\r\n    font-size: 30px;\r\n    color:rgb(169, 169, 169);\r\n    font-weight:bold;\r\n    margin-top: 20px;\r\n}\r\n\r\n.bio{\r\n    margin:auto;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    color:rgb(169, 169, 169);\r\n    font-weight:lighter;\r\n    margin-top: 20px;\r\n}\r\n\r\n.go-back{\r\n    position: absolute;\r\n    top:10px;\r\n    left:0;\r\n    border:none;\r\n    background:none;\r\n    width: 35px;\r\n    height:auto;\r\n}\r\n.back-icon{\r\n    filter: invert(30%) sepia(0%) saturate(1352%)\r\n    hue-rotate(120deg) brightness(180%) \r\n    contrast(100%);\r\n    cursor: pointer;\r\n}\r\n\r\n.sign-out-btn{\r\n    border:none;\r\n    background: none;\r\n    color:rgb(142, 142, 142);\r\n    font-size: 15px;\r\n    font-weight: bold;\r\n    transition:all 0.25s;\r\n    cursor: pointer;\r\n}\r\n\r\n.sign-out-btn:hover{\r\n    color:rgb(99, 99, 99);\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./src/App.css":
+/*!*********************!*\
+  !*** ./src/App.css ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: writeUserInfo, writeUserData, get_conversation, addContact, load_contactList, remove_message, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "writeUserInfo", function() { return writeUserInfo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "writeUserData", function() { return writeUserData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "get_conversation", function() { return get_conversation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addContact", function() { return addContact; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "load_contactList", function() { return load_contactList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "remove_message", function() { return remove_message; });
+/* harmony import */ var _logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logo.svg */ "./src/logo.svg");
+/* harmony import */ var _logo_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_logo_svg__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_signIn_signIn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/signIn/signIn */ "./src/components/signIn/signIn.jsx");
+/* harmony import */ var _pages_profile_profile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/profile/profile */ "./src/pages/profile/profile.jsx");
+/* harmony import */ var _pages_File__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/File */ "./src/pages/File.jsx");
+/* harmony import */ var _pages_main_page__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/main_page */ "./src/pages/main_page.jsx");
+/* harmony import */ var react_with_firebase_auth__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-with-firebase-auth */ "./node_modules/react-with-firebase-auth/dist/index.es.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/index.cjs.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _configs_firebase__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./configs/firebase */ "./src/configs/firebase.js");
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! firebase/database */ "./node_modules/firebase/database/dist/index.esm.js");
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/index.esm.js");
+/* harmony import */ var _firebase_firestore__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @firebase/firestore */ "./node_modules/@firebase/firestore/dist/index.cjs.js");
+/* harmony import */ var _firebase_firestore__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_firebase_firestore__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_message_action__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./redux/message/action */ "./src/redux/message/action.js");
+/* harmony import */ var _components_messages__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/messages */ "./src/components/messages.jsx");
+/* harmony import */ var _components_contacts_section__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/contacts_section */ "./src/components/contacts_section.jsx");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\App.js";
+
+
+
+
+
+
+
+
+ //
+
+
+
+
+
+
+
+
+
+
+
+
+const firebaseapp = firebase_app__WEBPACK_IMPORTED_MODULE_9__["initializeApp"](_configs_firebase__WEBPACK_IMPORTED_MODULE_10__["default"]);
+const firebaseAppAuth = firebaseapp.auth();
+const db = firebaseapp.database();
+const providers = {
+  googleProvider: new firebase_app__WEBPACK_IMPORTED_MODULE_9__["auth"].GoogleAuthProvider(),
+  emailProvider: new firebase_app__WEBPACK_IMPORTED_MODULE_9__["auth"].EmailAuthProvider(),
+  facebookProvider: new firebase_app__WEBPACK_IMPORTED_MODULE_9__["auth"].FacebookAuthProvider()
+};
+
+class App extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  constructor(props) {
+    super(props);
+    window.mainComponent = this;
+    this.state = {
+      messages: [],
+      users: [],
+      conv_name: ""
+    };
+  } // componentWill() {}
+
+
+  updateList(messages) {
+    this.setState({
+      messages: messages
+    });
+    Object(_pages_main_page__WEBPACK_IMPORTED_MODULE_7__["updateChat"])(messages);
+  }
+
+  updateUsers(users) {
+    this.setState({
+      users: users
+    });
+  }
+
+  render() {
+    const {
+      history
+    } = this.props;
+    console.log(this.props);
+    console.log(this.state.users); //  readContacts(this.props.user);
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "app",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61,
+        columnNumber: 9
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      exact: true,
+      path: "/",
+      render: props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_pages_main_page__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({}, props, {
+        user: this.props.user,
+        signInWithGoogle: this.props.signInWithGoogle // signInWithFacebook={this.props.signInWithFacebook}
+        // signInWithEmail={this.props.createUserWithEmailAndPassword}
+        ,
+        messages: this.state.messages,
+        userList: this.state.users,
+        signOut: this.props.signOut,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66,
+          columnNumber: 15
+        }
+      })),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62,
+        columnNumber: 11
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      path: "/signIn",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78,
+        columnNumber: 11
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      path: "/file",
+      component: _pages_File__WEBPACK_IMPORTED_MODULE_6__["default"],
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79,
+        columnNumber: 11
+      }
+    })));
+  }
+
+}
+
+let current_length = 0;
+let length = 0;
+let uid;
+let conv_name = "";
+const mesRef = db.ref(`/messages/`);
+let newMesArray = [];
+let mesArray = [];
+let from;
+let to;
+let contactList = [];
+let contacts_length = 0;
+mesRef.on("value", snapshot => {
+  mesArray = [];
+  snapshot.forEach(function (childSnapshot) {
+    const text = childSnapshot.val().text;
+    const key = childSnapshot.key;
+    from = childSnapshot.val().from;
+    to = childSnapshot.val().to;
+    mesArray.push({
+      text,
+      from,
+      to,
+      key
+    });
+  }); //console.log(mesArray);
+
+  window.mainComponent.updateList(mesArray);
+});
+const userRef = db.ref("/users");
+let userList = [];
+userRef.on("value", snapshot => {
+  length = 0; // userList = [];
+
+  snapshot.forEach(function (childSnapshot) {
+    const name = childSnapshot.val().name;
+    const id = childSnapshot.val().id;
+    userList.push({
+      name,
+      id
+    });
+  });
+  window.mainComponent.setState({
+    users: userList
+  });
+
+  if (window.mainComponent.props.user) {
+    uid = window.mainComponent.props.user.uid;
+  }
+}); //function readContacts(user) {
+
+db.ref(`/contacts`).on("value", snapshot => {
+  if (window.mainComponent.props.user) {
+    contactList = [];
+    snapshot.forEach(function (childSnapshot) {
+      if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
+        const name = childSnapshot.val().name;
+        const id = childSnapshot.val().contact_id;
+        contactList.push({
+          name,
+          id
+        });
+      }
+    });
+    Object(_components_contacts_section__WEBPACK_IMPORTED_MODULE_17__["load_contacts"])(contactList);
+  }
+});
+function writeUserInfo() {
+  if (window.mainComponent.props.user) {
+    length = 0;
+    const userRef = db.ref("/users");
+    userRef.once("value", snapshot => {
+      snapshot.forEach(function (childSnapshot) {
+        const id = childSnapshot.val().id;
+
+        if (id == window.mainComponent.props.user.uid) {
+          length++;
+          console.log(childSnapshot.val());
+        }
+      });
+    });
+    const name = window.mainComponent.props.user.displayName;
+    const id = window.mainComponent.props.user.uid;
+
+    if (length < 1) {
+      userRef.push({
+        name,
+        id
+      });
+    }
+
+    load_contactList();
+  }
+}
+function writeUserData(text, from) {
+  const mesRef = db.ref(`/messages/`);
+  mesRef.push({
+    text,
+    from,
+    to: window.mainComponent.state.conv_name
+  });
+}
+function get_conversation(address) {
+  window.mainComponent.setState({
+    conv_name: address
+  });
+  uid = window.mainComponent.props.user.uid;
+  conv_name = address;
+  console.log(address);
+}
+function addContact(name, uid, contact_id) {
+  contacts_length = 0;
+  db.ref("/contacts").once("value", snapshot => {
+    snapshot.forEach(function (childSnapshot) {
+      if (childSnapshot.val().contact_id == contact_id && childSnapshot.val().uid == uid) {
+        contacts_length++;
+      }
+    });
+  });
+
+  if (contacts_length < 1) {
+    db.ref(`/contacts`).push({
+      name,
+      uid,
+      contact_id
+    });
+  }
+
+  db.ref(`/contacts`).once("value", snapshot => {
+    contactList = [];
+    snapshot.forEach(function (childSnapshot) {
+      if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
+        const name = childSnapshot.val().name;
+        const id = childSnapshot.val().contact_id;
+        contactList.push({
+          name,
+          id
+        });
+      }
+    });
+    Object(_components_contacts_section__WEBPACK_IMPORTED_MODULE_17__["load_contacts"])(contactList);
+  });
+}
+function load_contactList() {
+  db.ref(`/contacts`).once("value", snapshot => {
+    contactList = [];
+    snapshot.forEach(function (childSnapshot) {
+      if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
+        const name = childSnapshot.val().name;
+        const id = childSnapshot.val().contact_id;
+        contactList.push({
+          name,
+          id
+        });
+      }
+    });
+  });
+  Object(_components_contacts_section__WEBPACK_IMPORTED_MODULE_17__["load_contacts"])(contactList);
+}
+function remove_message(key) {
+  db.ref("/messages").child(key).remove();
+}
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_with_firebase_auth__WEBPACK_IMPORTED_MODULE_8__["default"])({
+  providers,
+  firebaseAppAuth
+})(App));
+
+/***/ }),
+
+/***/ "./src/Icons/background.svg":
+/*!**********************************!*\
+  !*** ./src/Icons/background.svg ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/background.fe5a16e4.svg";
+
+/***/ }),
+
+/***/ "./src/Icons/go-back.svg":
+/*!*******************************!*\
+  !*** ./src/Icons/go-back.svg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/go-back.0d6ace20.svg";
+
+/***/ }),
+
+/***/ "./src/Icons/google.svg":
+/*!******************************!*\
+  !*** ./src/Icons/google.svg ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/google.648fa9fa.svg";
+
+/***/ }),
+
+/***/ "./src/Icons/profile.svg":
+/*!*******************************!*\
+  !*** ./src/Icons/profile.svg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/profile.6f88fc6b.svg";
+
+/***/ }),
+
+/***/ "./src/Icons/sendBtn.svg":
+/*!*******************************!*\
+  !*** ./src/Icons/sendBtn.svg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/sendBtn.153c8f34.svg";
+
+/***/ }),
+
+/***/ "./src/Icons/x.svg":
+/*!*************************!*\
+  !*** ./src/Icons/x.svg ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/x.4af807eb.svg";
+
+/***/ }),
+
+/***/ "./src/components/Layout.css":
+/*!***********************************!*\
+  !*** ./src/components/Layout.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Layout.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Layout.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Layout.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Layout.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Layout.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Layout.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/Layout.jsx":
+/*!***********************************!*\
+  !*** ./src/components/Layout.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ "./src/components/header.jsx");
+/* harmony import */ var _Layout_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout.css */ "./src/components/Layout.css");
+/* harmony import */ var _Layout_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Layout_css__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\Layout.jsx";
+
+
+
+
+function Layout(props) {
+  const {
+    user,
+    signOut,
+    userList
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "layout",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    user: user,
+    userList: userList,
+    signOut: signOut,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 13
+    }
+  }), props.children);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./src/components/chatSection/chatSection.css":
+/*!****************************************************!*\
+  !*** ./src/components/chatSection/chatSection.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./chatSection.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/chatSection/chatSection.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./chatSection.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/chatSection/chatSection.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./chatSection.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/chatSection/chatSection.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/chatSection/chatSection.jsx":
+/*!****************************************************!*\
+  !*** ./src/components/chatSection/chatSection.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _chatSection_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./chatSection.css */ "./src/components/chatSection/chatSection.css");
+/* harmony import */ var _chatSection_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_chatSection_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _message_input_message_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../message_input/message_input */ "./src/components/message_input/message_input.jsx");
+/* harmony import */ var _messages__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! .././messages */ "./src/components/messages.jsx");
+/* harmony import */ var _conv_header_conv_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../conv_header/conv_header */ "./src/components/conv_header/conv_header.jsx");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\chatSection\\chatSection.jsx";
+
+
+
+
+
+
+function chatSection(props) {
+  const {
+    user,
+    writeUserData,
+    messages,
+    name,
+    userList
+  } = props; //console.log(messages);
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chat-section",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_conv_header_conv_header__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: name,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_messages__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    userList: userList,
+    user: user // message_list = {messages}
+    ,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_message_input_message_input__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    user: user,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 13
+    }
+  }));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (chatSection);
+
+/***/ }),
+
+/***/ "./src/components/contact/contact_item.css":
+/*!*************************************************!*\
+  !*** ./src/components/contact/contact_item.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./contact_item.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/contact/contact_item.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./contact_item.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/contact/contact_item.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./contact_item.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/contact/contact_item.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/contact/contact_item.jsx":
+/*!*************************************************!*\
+  !*** ./src/components/contact/contact_item.jsx ***!
+  \*************************************************/
+/*! exports provided: mapDispatchToProps, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapDispatchToProps", function() { return mapDispatchToProps; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _contact_item_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact_item.css */ "./src/components/contact/contact_item.css");
+/* harmony import */ var _contact_item_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_contact_item_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_userSelect_action__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/userSelect/action */ "./src/redux/userSelect/action.js");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../App */ "./src/App.js");
+/* harmony import */ var _message_input_message_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! .././message_input/message_input */ "./src/components/message_input/message_input.jsx");
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Icons/profile.svg */ "./src/Icons/profile.svg");
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Icons_profile_svg__WEBPACK_IMPORTED_MODULE_6__);
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\contact\\contact_item.jsx";
+
+
+
+
+
+
+
+
+
+function contact_item(props) {
+  const {
+    name,
+    id,
+    uid,
+    messages,
+    latest_message
+  } = props;
+  console.log(id);
+  let contact_messages = [];
+  let sender = [];
+  messages.map(message => {
+    if (uid == message.from && id == message.to || id == message.from && uid == message.to) {
+      contact_messages.push(message.text);
+      sender.push(message.from);
+    }
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "contactItem",
+    onClick: () => getUser(props, name, id, uid),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    alt: "",
+    className: "item1 contact-profile",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "item2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 13
+    }
+  }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 19
+    }
+  }), contact_messages[0] ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "item3",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 13
+    }
+  }, uid == sender[0] ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 17
+    }
+  }, "You:", contact_messages[0]) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 17
+    }
+  }, contact_messages[0])) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "item3",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 17
+    }
+  }, "You're connected")));
+}
+
+function getUser(props, name, id, uid) {
+  Object(_App__WEBPACK_IMPORTED_MODULE_4__["get_conversation"])(id);
+  props.selectUser({
+    name,
+    id
+  });
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    selectUser: payload => dispatch(Object(_redux_userSelect_action__WEBPACK_IMPORTED_MODULE_3__["selectUser"])(payload))
+  };
+} // export function mapStateToProps(state){
+//     return{
+//     }
+// }
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(null, mapDispatchToProps)(contact_item));
+
+/***/ }),
+
+/***/ "./src/components/contacts_section.css":
+/*!*********************************************!*\
+  !*** ./src/components/contacts_section.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./contacts_section.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/contacts_section.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./contacts_section.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/contacts_section.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./contacts_section.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/contacts_section.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/contacts_section.jsx":
+/*!*********************************************!*\
+  !*** ./src/components/contacts_section.jsx ***!
+  \*********************************************/
+/*! exports provided: clearSearch, load_contacts, changeDisplay, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clearSearch", function() { return clearSearch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "load_contacts", function() { return load_contacts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeDisplay", function() { return changeDisplay; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _contacts_section_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contacts_section.css */ "./src/components/contacts_section.css");
+/* harmony import */ var _contacts_section_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_contacts_section_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _userItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./userItem */ "./src/components/userItem.jsx");
+/* harmony import */ var _pages_profile_profile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/profile/profile */ "./src/pages/profile/profile.jsx");
+/* harmony import */ var _contact_contact_item__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contact/contact_item */ "./src/components/contact/contact_item.jsx");
+/* harmony import */ var _Icons_x_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Icons/x.svg */ "./src/Icons/x.svg");
+/* harmony import */ var _Icons_x_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Icons_x_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_message_action__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../redux/message/action */ "./src/redux/message/action.js");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\contacts_section.jsx";
+
+
+
+
+
+
+
+
+
+class contacts extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    window.contacts_section = this;
+    this.state = {
+      value: '',
+      display: 'list',
+      contact_list: []
+    };
+  }
+
+  setValue(event) {
+    this.setState({
+      value: event
+    });
+  }
+
+  search(event) {
+    this.setValue(event.target.value);
+  }
+
+  render() {
+    //console.log(this.state);
+    const {
+      userList,
+      display,
+      user,
+      signOut,
+      messages
+    } = this.props; // console.log(userList);
+
+    console.log(this.state.value); //    userList[0]?
+    //    console.log(userList[0].name):console.log("none");
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "contacts",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 13
+      }
+    }, this.state.display == 'list' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "iii",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 20
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "search-section",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 16
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      id: "input",
+      className: "search-input",
+      placeholder: "Search people",
+      type: "text",
+      onClick: event => event.preventDefault(),
+      onChange: event => this.search(event),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 16
+      }
+    }), this.state.value ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "clear-btn",
+      onClick: event => clearSearch(),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 31
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "close-icon",
+      src: _Icons_x_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+      alt: "",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48,
+        columnNumber: 31
+      }
+    })) : null), this.state.value ? userList.filter(item => item.name.includes(this.state.value)).map(item => {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_userItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        name: item.name,
+        id: item.id,
+        section: this.state.value,
+        uid: user.uid,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59,
+          columnNumber: 33
+        }
+      });
+    }) : this.state.contact_list ? this.state.contact_list.map(item => {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_contact_contact_item__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        name: item.name,
+        id: item.id,
+        uid: user.uid,
+        messages: messages,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71,
+          columnNumber: 33
+        }
+      });
+    }) : null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_profile_profile__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      user: user,
+      signOut: signOut,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 83,
+        columnNumber: 21
+      }
+    }));
+  }
+
+}
+
+function clearSearch() {
+  window.contacts_section.setState({
+    value: ''
+  });
+  document.getElementById("input").value = ''; //  console.log( window.contacts_section.state.value);
+}
+function load_contacts(contact_list) {
+  window.contacts_section.setState({
+    contact_list
+  });
+}
+function changeDisplay(display) {
+  window.contacts_section.setState({
+    display
+  });
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    add_message: payload => dispatch(Object(_redux_message_action__WEBPACK_IMPORTED_MODULE_7__["add_message"])(payload))
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (contacts);
+
+/***/ }),
+
+/***/ "./src/components/conv_header/conv_header.css":
+/*!****************************************************!*\
+  !*** ./src/components/conv_header/conv_header.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./conv_header.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/conv_header/conv_header.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./conv_header.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/conv_header/conv_header.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./conv_header.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/conv_header/conv_header.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/conv_header/conv_header.jsx":
+/*!****************************************************!*\
+  !*** ./src/components/conv_header/conv_header.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _conv_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./conv_header.css */ "./src/components/conv_header/conv_header.css");
+/* harmony import */ var _conv_header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_conv_header_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Icons/profile.svg */ "./src/Icons/profile.svg");
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\conv_header\\conv_header.jsx";
+
+
+ //import { connect } from "react-redux";
+
+function conv_header(props) {
+  const {
+    name
+  } = props;
+  console.log(name);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "conv-header",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "",
+    className: "user-profile-pic",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "username",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 17
+    }
+  }, name));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (conv_header);
+
+/***/ }),
+
+/***/ "./src/components/header.css":
+/*!***********************************!*\
+  !*** ./src/components/header.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./header.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/header.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./header.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/header.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./header.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/header.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/header.jsx":
+/*!***********************************!*\
+  !*** ./src/components/header.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.css */ "./src/components/header.css");
+/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Icons/profile.svg */ "./src/Icons/profile.svg");
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _contacts_section__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./contacts_section */ "./src/components/contacts_section.jsx");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\header.jsx";
+
+
+
+
+
+
+
+class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    const {
+      user,
+      userList
+    } = this.props;
+    console.log(userList);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+      alt: "",
+      className: "myIcon",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 21
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      onClick: () => Object(_contacts_section__WEBPACK_IMPORTED_MODULE_5__["changeDisplay"])('profile'),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "me",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21,
+        columnNumber: 25
+      }
+    }, user ? user.displayName : null))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./src/components/message_input/message-input.css":
+/*!********************************************************!*\
+  !*** ./src/components/message_input/message-input.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./message-input.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/message_input/message-input.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./message-input.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/message_input/message-input.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./message-input.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/message_input/message-input.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/message_input/message_input.jsx":
+/*!********************************************************!*\
+  !*** ./src/components/message_input/message_input.jsx ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _message_input_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./message-input.css */ "./src/components/message_input/message-input.css");
+/* harmony import */ var _message_input_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_message_input_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Icons_sendBtn_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Icons/sendBtn.svg */ "./src/Icons/sendBtn.svg");
+/* harmony import */ var _Icons_sendBtn_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Icons_sendBtn_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _redux_message_action__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/message/action */ "./src/redux/message/action.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../App */ "./src/App.js");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\message_input\\message_input.jsx";
+
+
+
+
+
+
+ //import App from "../../App";
+
+class message_input extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: '',
+      id: '',
+      messages: []
+    };
+  }
+
+  render() {
+    const {
+      text,
+      id
+    } = this.state;
+    const {
+      user
+    } = this.props; // console.log(this.props.user.uid);
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "m-input",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "text",
+      placeholder: "Type a message",
+      value: text,
+      className: "message",
+      onChange: event => this.setMessage(event),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "send-btn",
+      onClick: () => this.sendMessage({
+        text,
+        id
+      }, user.uid),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: _Icons_sendBtn_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+      alt: "",
+      className: "send-icon",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 21
+      }
+    })));
+  }
+
+  setMessage(event) {
+    this.setState({
+      text: event.target.value
+    }); // console.log(this.state.text);
+
+    this.setState({
+      id: this.props.user.uid
+    });
+  }
+
+  sendMessage(_ref, uid) {
+    let {
+      text,
+      id
+    } = _ref;
+    //console.log(uid);
+    Object(_App__WEBPACK_IMPORTED_MODULE_6__["writeUserData"])(text, id);
+    this.setState({
+      text: ''
+    }); // this.setState({messages:readUserData()})
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (message_input);
+
+/***/ }),
+
+/***/ "./src/components/messages.css":
+/*!*************************************!*\
+  !*** ./src/components/messages.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./messages.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/messages.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./messages.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/messages.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./messages.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/messages.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/messages.jsx":
+/*!*************************************!*\
+  !*** ./src/components/messages.jsx ***!
+  \*************************************/
+/*! exports provided: updateMessages, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateMessages", function() { return updateMessages; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _messages_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./messages.css */ "./src/components/messages.css");
+/* harmony import */ var _messages_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_messages_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _myMessage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./myMessage */ "./src/components/myMessage.jsx");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../App */ "./src/App.js");
+/* harmony import */ var _otherMessage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./otherMessage */ "./src/components/otherMessage.jsx");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\messages.jsx";
+
+
+
+
+
+
+
+class messages extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    window.messages_component = this;
+    this.state = {
+      messages: []
+    };
+  }
+
+  render() {
+    const {
+      user,
+      message_list,
+      conv_id,
+      conv_name
+    } = this.props;
+    let list;
+    list = { ...this.state.messages
+    }; //   console.log(message_list[1].key);
+    //   this.setState({messages:messages.messages});
+    //messages = this.state.messages;
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "messages",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 13
+      }
+    }, message_list ? message_list.map(message => {
+      // console.log(message.key);
+      if (message.to == conv_id && message.from == user.uid) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 29
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_myMessage__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          text: message.text,
+          id: user.uid,
+          code: message.key,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35,
+            columnNumber: 25
+          }
+        }));
+      } else if (message.to == user.uid && message.from == conv_id) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 45,
+            columnNumber: 29
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_otherMessage__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          text: message.text,
+          name: conv_name,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 25
+          }
+        }));
+      }
+    }) : null);
+  }
+
+}
+
+function updateMessages(messages_list) {//     window.messages_component.setState({messages:messages_list});
+  //     console.log(window.messages_component.state.messages)
+}
+
+function mapStateToProps(state) {
+  return {
+    message_list: state.msg.message_list,
+    conv_id: state.sr.selected_user.id,
+    conv_name: state.sr.selected_user.name
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, null)(messages));
+
+/***/ }),
+
+/***/ "./src/components/myMessage.css":
+/*!**************************************!*\
+  !*** ./src/components/myMessage.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./myMessage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/myMessage.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./myMessage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/myMessage.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./myMessage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/myMessage.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/myMessage.jsx":
+/*!**************************************!*\
+  !*** ./src/components/myMessage.jsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _myMessage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./myMessage.css */ "./src/components/myMessage.css");
+/* harmony import */ var _myMessage_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_myMessage_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @imagemarker/use-text-width */ "./node_modules/@imagemarker/use-text-width/dist/umd/index.js");
+/* harmony import */ var _imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_imagemarker_use_text_width__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../App */ "./src/App.js");
+/* harmony import */ var _Icons_x_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Icons/x.svg */ "./src/Icons/x.svg");
+/* harmony import */ var _Icons_x_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Icons_x_svg__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\myMessage.jsx";
+
+
+
+
+
+
+function myMessage(props) {
+  const {
+    text,
+    id,
+    code
+  } = props; // const width = useTextWidth({text, font: '20px Times'})
+  // console.log(text[text.length - 1]);
+
+  console.log(code); //getWidth(text)
+  //console.log(text.offsetWidth);
+  // let message = document.getElementsByClassName("my-message");
+  // message = message.replace(/  /g, "[sp] [sp]")
+  // message = message.replace(/\n/g, "[sp] [sp]")
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "message-set",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "delete",
+    onClick: () => {
+      Object(_App__WEBPACK_IMPORTED_MODULE_3__["remove_message"])(code);
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "remove-btn",
+    src: _Icons_x_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 17
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "my-message",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 13
+    }
+  }, text));
+} // function getWidth(text){
+//     text.innerHTML = this;
+//     console.log(text.offsetWidth);
+// }
+
+
+/* harmony default export */ __webpack_exports__["default"] = (myMessage);
+
+/***/ }),
+
+/***/ "./src/components/otherMessage.css":
+/*!*****************************************!*\
+  !*** ./src/components/otherMessage.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./otherMessage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/otherMessage.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./otherMessage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/otherMessage.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./otherMessage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/otherMessage.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/otherMessage.jsx":
+/*!*****************************************!*\
+  !*** ./src/components/otherMessage.jsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return otherMessage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _otherMessage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./otherMessage.css */ "./src/components/otherMessage.css");
+/* harmony import */ var _otherMessage_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_otherMessage_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\otherMessage.jsx";
+
+
+function otherMessage(props) {
+  const {
+    name,
+    text
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "message-components",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sender-name",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 13
+    }
+  }, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "other-message",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 13
+    }
+  }, text));
+}
+
+/***/ }),
+
+/***/ "./src/components/signIn/signIn.css":
+/*!******************************************!*\
+  !*** ./src/components/signIn/signIn.css ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./signIn.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/signIn/signIn.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./signIn.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/signIn/signIn.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./signIn.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/signIn/signIn.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/signIn/signIn.jsx":
+/*!******************************************!*\
+  !*** ./src/components/signIn/signIn.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _signIn_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./signIn.css */ "./src/components/signIn/signIn.css");
+/* harmony import */ var _signIn_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_signIn_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_User_action__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../redux/User/action */ "./src/redux/User/action.js");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../App */ "./src/App.js");
+/* harmony import */ var _Icons_google_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Icons/google.svg */ "./src/Icons/google.svg");
+/* harmony import */ var _Icons_google_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Icons_google_svg__WEBPACK_IMPORTED_MODULE_6__);
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\signIn\\signIn.jsx";
+
+
+
+
+
+
+
+
+function signIn(props) {
+  const {
+    signInWithGoogle,
+    signInWithFacebook,
+    signInWithEmail,
+    user,
+    signOut,
+    history,
+    userList
+  } = props;
+  console.log(signInWithFacebook);
+
+  function handleGoogleLogin() {
+    const googleLoginResponse = signInWithGoogle();
+    googleLoginResponse.then(() => {
+      Object(_App__WEBPACK_IMPORTED_MODULE_5__["writeUserInfo"])(); //load_contactList();
+    }); // .catch(window.location.reload());
+  } // function handleFacebooklogin(){
+  //     const facebookLoginResponse = signInWithFacebook();
+  //     facebookLoginResponse.then(()=>{
+  //         writeUserInfo();
+  //     })
+  //     // .catch(window.location.reload());
+  // }
+  // function handleEmailSignIn(){
+  //     const email = document.getElementById('email').value;
+  //     const password = document.getElementById('password').value;
+  //     signInWithEmail(email, password).then(()=>{
+  //         writeUserInfo();
+  //     })
+  // }
+
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "signin-screen",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "signin-section",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "title",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 13
+    }
+  }, "Talk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "signin-btn",
+    onClick: handleGoogleLogin,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 13
+    }
+  }, "Sign in with google ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _Icons_google_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    alt: "",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 92
+    }
+  }))));
+}
+
+function functie() {}
+/*  getEmailLogin(emailLogIn, history){
+      const googleLoginResponse = emailLogIn();
+      googleLoginResponse.then(()=>{
+          history.push('/');
+      })
+
+      
+  }
+    setEmail(event, email){
+      this.setState({email:event.target.value});
+      console.log(email);
+  }
+  
+  setUsername(event, username){
+      this.setState({username:event.target.value});
+      console.log(username);
+  }
+    setProfile(email, username){
+      this.props.createUser({
+          email,
+          username
+      })
+  }
+function mapDispatchToProps(dispatch){
+  return{
+      createUser:(payload) => dispatch(createUser(payload))
+  }
+}
+export default connect(null, mapDispatchToProps)(signIn);*/
+
+
+/* harmony default export */ __webpack_exports__["default"] = (signIn);
+
+/***/ }),
+
+/***/ "./src/components/userItem.css":
+/*!*************************************!*\
+  !*** ./src/components/userItem.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./userItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/userItem.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./userItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/userItem.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./userItem.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/userItem.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/userItem.jsx":
+/*!*************************************!*\
+  !*** ./src/components/userItem.jsx ***!
+  \*************************************/
+/*! exports provided: mapDispatchToProps, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapDispatchToProps", function() { return mapDispatchToProps; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _userItem_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./userItem.css */ "./src/components/userItem.css");
+/* harmony import */ var _userItem_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_userItem_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Icons/profile.svg */ "./src/Icons/profile.svg");
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_userSelect_action__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/userSelect/action */ "./src/redux/userSelect/action.js");
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../App */ "./src/App.js");
+/* harmony import */ var _message_input_message_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./message_input/message_input */ "./src/components/message_input/message_input.jsx");
+/* harmony import */ var _contacts_section__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./contacts_section */ "./src/components/contacts_section.jsx");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\components\\userItem.jsx";
+
+
+
+
+
+
+
+
+
+
+function getConv(payload) {/// props.selectUser(payload)
+}
+
+function match(name, section, matching_section, remaining_section) {// if(section){
+  //}
+}
+
+function UserItem(props) {
+  const {
+    name,
+    id,
+    section,
+    uid
+  } = props;
+  let matching_section = '';
+  let remaining_section = '';
+  let x = 0;
+  console.log(uid); // const text = document.getElementsByClassName()
+  // name.style.color = 'blue';
+  //    name.map( character)
+
+  for (let i = 0; i < name.length; i++) {
+    if (name[i] == section[i]) {
+      if (name[i] == '') {
+        x++;
+      }
+    }
+  }
+
+  for (let i = 0; i < name.length; i++) {
+    if (name[i] == 'r') {
+      x++;
+    }
+
+    console.log(x);
+
+    if (name[i] == section[i]) {
+      matching_section += name[i];
+    } // if(name[i+1] == ' '){
+    //     matching_section += '\xa0';
+    // }
+
+  }
+
+  remaining_section = name.substring(matching_section.length, name.length);
+  console.log(name.length + " - " + matching_section.length + " = " + (name.length - matching_section.length));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "userItem",
+    onClick: () => getUser(props, name, id, uid),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "",
+    className: "user-profile",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      color: 'rgb(61, 170, 144)'
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 16
+    }
+  }, matching_section)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 13
+    }
+  }, remaining_section));
+}
+
+function getUser(props, name, id, uid) {
+  Object(_App__WEBPACK_IMPORTED_MODULE_5__["get_conversation"])(id);
+  props.selectUser({
+    name,
+    id
+  });
+  Object(_App__WEBPACK_IMPORTED_MODULE_5__["addContact"])(name, uid, id);
+  Object(_contacts_section__WEBPACK_IMPORTED_MODULE_7__["clearSearch"])();
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    selectUser: payload => dispatch(Object(_redux_userSelect_action__WEBPACK_IMPORTED_MODULE_4__["selectUser"])(payload))
+  };
+}
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(null, mapDispatchToProps)(UserItem));
+
+/***/ }),
+
+/***/ "./src/configs/firebase.js":
+/*!*********************************!*\
+  !*** ./src/configs/firebase.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/index.cjs.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var firebase_analytics__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/analytics */ "./node_modules/firebase/analytics/dist/index.esm.js");
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyD4k0lOOvmNhoza9_6Cgj36sa59ROUK-z4",
+  authDomain: "talk-database-33d34.firebaseapp.com",
+  projectId: "talk-database-33d34",
+  storageBucket: "talk-database-33d34.appspot.com",
+  messagingSenderId: "1092157435375",
+  appId: "1:1092157435375:web:7263ca2a35be1722f45a1a",
+  measurementId: "G-6R44DCXHGM"
+};
+/* harmony default export */ __webpack_exports__["default"] = (firebaseConfig);
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.js");
+/* harmony import */ var _reportWebVitals__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./reportWebVitals */ "./src/reportWebVitals.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./redux/store */ "./src/redux/store.js");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\index.js";
+
+
+
+
+
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
+  store: _redux_store__WEBPACK_IMPORTED_MODULE_8__["default"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12,
+    columnNumber: 3
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["BrowserRouter"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13,
+    columnNumber: 5
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14,
+    columnNumber: 7
+  }
+}))), document.getElementById("root")); // If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_4__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/logo.svg":
+/*!**********************!*\
+  !*** ./src/logo.svg ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/logo.06e73328.svg";
+
+/***/ }),
+
+/***/ "./src/pages/File.jsx":
+/*!****************************!*\
+  !*** ./src/pages/File.jsx ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\pages\\File.jsx";
+
+
+
+
+class File extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const {
+      message
+    } = this.props;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 13
+      }
+    }, message, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      to: "/main",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14,
+        columnNumber: 17
+      }
+    }, "main"));
+  }
+
+}
+
+function mapStateToProps(state) {
+  return {
+    // email:state.user.email,
+    message: state.text
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(File));
+
+/***/ }),
+
+/***/ "./src/pages/mainPage.css":
+/*!********************************!*\
+  !*** ./src/pages/mainPage.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./mainPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/mainPage.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./mainPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/mainPage.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./mainPage.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/mainPage.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/pages/main_page.jsx":
+/*!*********************************!*\
+  !*** ./src/pages/main_page.jsx ***!
+  \*********************************/
+/*! exports provided: updateChat, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateChat", function() { return updateChat; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.jsx");
+/* harmony import */ var _mainPage_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mainPage.css */ "./src/pages/mainPage.css");
+/* harmony import */ var _mainPage_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_mainPage_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_chatSection_chatSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/chatSection/chatSection */ "./src/components/chatSection/chatSection.jsx");
+/* harmony import */ var _components_contacts_section__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/contacts_section */ "./src/components/contacts_section.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _components_message_input_message_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/message_input/message_input */ "./src/components/message_input/message_input.jsx");
+/* harmony import */ var _components_signIn_signIn__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/signIn/signIn */ "./src/components/signIn/signIn.jsx");
+/* harmony import */ var _redux_message_action__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../redux/message/action */ "./src/redux/message/action.js");
+/* harmony import */ var _Icons_background_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../Icons/background.svg */ "./src/Icons/background.svg");
+/* harmony import */ var _Icons_background_svg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_Icons_background_svg__WEBPACK_IMPORTED_MODULE_10__);
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\pages\\main_page.jsx";
+
+
+
+
+
+
+
+
+
+
+
+
+class Main_page extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+  constructor(props) {
+    super(props);
+    window.main_page = this;
+  }
+
+  render() {
+    const {
+      user,
+      signInWithGoogle,
+      signInWithFacebook,
+      writeUserData,
+      messages,
+      userList,
+      name,
+      signOut
+    } = this.props; //  console.log(name);
+    //  console.log(user);
+    // console.log(messages);
+    // console.log(userList);
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "main",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 13
+      }
+    }, user ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      user: user,
+      userList: userList,
+      className: "layout",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "content",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_contacts_section__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      userList: userList,
+      user: user,
+      signOut: signOut,
+      messages: messages,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 25
+      }
+    }), name ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_chatSection_chatSection__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      user: user,
+      writeUserData: writeUserData,
+      messages: messages,
+      name: name,
+      userList: userList,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 29
+      }
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "placeHolder",
+      src: _Icons_background_svg__WEBPACK_IMPORTED_MODULE_10___default.a,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46,
+        columnNumber: 45
+      }
+    }))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_signIn_signIn__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      signInWithGoogle: signInWithGoogle,
+      signInWithFacebook: signInWithFacebook,
+      signInWithEmail: this.props.signInWithEmail,
+      user: user,
+      userList: userList,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52,
+        columnNumber: 17
+      }
+    }));
+  }
+
+}
+
+function updateChat(messages) {
+  window.main_page.props.add_message(messages);
+}
+
+function mapStateToProps(state) {
+  return {
+    name: state.sr.selected_user.name
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    add_message: payload => dispatch(Object(_redux_message_action__WEBPACK_IMPORTED_MODULE_9__["add_message"])(payload))
+  };
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Main_page)); //export default Main_page;
+
+/***/ }),
+
+/***/ "./src/pages/profile/profile.css":
+/*!***************************************!*\
+  !*** ./src/pages/profile/profile.css ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./profile.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/profile/profile.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./profile.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/profile/profile.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./profile.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/pages/profile/profile.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/pages/profile/profile.jsx":
+/*!***************************************!*\
+  !*** ./src/pages/profile/profile.jsx ***!
+  \***************************************/
+/*! exports provided: mapDispatchToProps, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapDispatchToProps", function() { return mapDispatchToProps; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _profile_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./profile.css */ "./src/pages/profile/profile.css");
+/* harmony import */ var _profile_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_profile_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Icons/profile.svg */ "./src/Icons/profile.svg");
+/* harmony import */ var _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Icons_profile_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Layout */ "./src/components/Layout.jsx");
+/* harmony import */ var _components_contacts_section__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/contacts_section */ "./src/components/contacts_section.jsx");
+/* harmony import */ var _Icons_go_back_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Icons/go-back.svg */ "./src/Icons/go-back.svg");
+/* harmony import */ var _Icons_go_back_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Icons_go_back_svg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _redux_userSelect_action__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../redux/userSelect/action */ "./src/redux/userSelect/action.js");
+var _jsxFileName = "C:\\Users\\tudor\\OneDrive\\Desktop\\Talk\\talk\\src\\pages\\profile\\profile.jsx";
+
+
+
+
+
+
+
+
+
+
+function profile(props) {
+  const {
+    user,
+    signOut,
+    history
+  } = props;
+
+  function handleSignOut() {
+    props.selectUser({
+      name: '',
+      id: ''
+    });
+    signOut();
+  }
+
+  console.log(user);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile-pic",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "image",
+    src: _Icons_profile_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 21
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "name",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 13
+    }
+  }, user ? user.displayName : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bio",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "sign-out-btn",
+    onClick: handleSignOut,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 14
+    }
+  }, "Sign out"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "go-back",
+    onClick: () => Object(_components_contacts_section__WEBPACK_IMPORTED_MODULE_6__["changeDisplay"])("list"),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 14
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "back-icon",
+    src: _Icons_go_back_svg__WEBPACK_IMPORTED_MODULE_7___default.a,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 78
+    }
+  })));
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    selectUser: payload => dispatch(Object(_redux_userSelect_action__WEBPACK_IMPORTED_MODULE_8__["selectUser"])(payload))
+  };
+}
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(null, mapDispatchToProps)(profile));
+
+/***/ }),
+
+/***/ "./src/redux/User/action.js":
+/*!**********************************!*\
+  !*** ./src/redux/User/action.js ***!
+  \**********************************/
+/*! exports provided: createUser */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createUser", function() { return createUser; });
+function createUser(payload) {
+  return {
+    type: "createUser",
+    payload
+  };
+}
+
+/***/ }),
+
+/***/ "./src/redux/User/reducer.js":
+/*!***********************************!*\
+  !*** ./src/redux/User/reducer.js ***!
+  \***********************************/
+/*! exports provided: user_profile */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "user_profile", function() { return user_profile; });
+const initialState = {
+  username: "",
+  email: ""
+};
+function user_profile() {
+  let state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  let action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "createUser":
+      console.log(action.payload);
+      return { ...state,
+        username: action.payload.username,
+        email: action.payload.email
+      };
+
+    default:
+      return { ...state
+      };
+  }
+}
+
+/***/ }),
+
+/***/ "./src/redux/message/action.js":
+/*!*************************************!*\
+  !*** ./src/redux/message/action.js ***!
+  \*************************************/
+/*! exports provided: add_message */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add_message", function() { return add_message; });
+function add_message(payload) {
+  return {
+    type: "message",
+    payload
+  };
+}
+
+/***/ }),
+
+/***/ "./src/redux/message/reducer.js":
+/*!**************************************!*\
+  !*** ./src/redux/message/reducer.js ***!
+  \**************************************/
+/*! exports provided: msg_reducer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "msg_reducer", function() { return msg_reducer; });
+/* harmony import */ var _components_messages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/messages */ "./src/components/messages.jsx");
+
+const initialState = {
+  message_list: [],
+  id: 0
+};
+function msg_reducer() {
+  let state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  let action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "message":
+      console.log("new message");
+      const mes = { ...action.payload
+      };
+      console.log(action.payload);
+      return { ...state,
+        message_list: action.payload.reverse()
+      };
+
+    default:
+      return { ...state
+      };
+  }
+}
+
+/***/ }),
+
+/***/ "./src/redux/store.js":
+/*!****************************!*\
+  !*** ./src/redux/store.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var _User_reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./User/reducer */ "./src/redux/User/reducer.js");
+/* harmony import */ var _message_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./message/reducer */ "./src/redux/message/reducer.js");
+/* harmony import */ var _userSelect_reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./userSelect/reducer */ "./src/redux/userSelect/reducer.js");
+
+
+
+
+
+const root_reducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
+  user: _User_reducer__WEBPACK_IMPORTED_MODULE_1__["user_profile"],
+  msg: _message_reducer__WEBPACK_IMPORTED_MODULE_2__["msg_reducer"],
+  sr: _userSelect_reducer__WEBPACK_IMPORTED_MODULE_3__["selection_reducer"]
+});
+const store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(root_reducer);
+/* harmony default export */ __webpack_exports__["default"] = (store);
+
+/***/ }),
+
+/***/ "./src/redux/userSelect/action.js":
+/*!****************************************!*\
+  !*** ./src/redux/userSelect/action.js ***!
+  \****************************************/
+/*! exports provided: selectUser */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectUser", function() { return selectUser; });
+function selectUser(payload) {
+  return {
+    type: "selectUser",
+    payload
+  };
+}
+
+/***/ }),
+
+/***/ "./src/redux/userSelect/reducer.js":
+/*!*****************************************!*\
+  !*** ./src/redux/userSelect/reducer.js ***!
+  \*****************************************/
+/*! exports provided: selection_reducer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selection_reducer", function() { return selection_reducer; });
+const firstState = {
+  selected_user: ""
+};
+function selection_reducer() {
+  let state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : firstState;
+  let action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case "selectUser":
+      console.log(action.payload);
+      return { ...state,
+        selected_user: action.payload
+      };
+
+    default:
+      return state;
+  }
+}
+
+/***/ }),
+
+/***/ "./src/reportWebVitals.js":
+/*!********************************!*\
+  !*** ./src/reportWebVitals.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! web-vitals */ "./node_modules/web-vitals/dist/web-vitals.js")).then(_ref => {
+      let {
+        getCLS,
+        getFID,
+        getFCP,
+        getLCP,
+        getTTFB
+      } = _ref;
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (reportWebVitals);
+
+/***/ }),
+
+/***/ "./src/serviceWorker.js":
+/*!******************************!*\
+  !*** ./src/serviceWorker.js ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read https://bit.ly/CRA-PWA
+const isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) {}
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(registration => {
+    registration.onupdatefound = () => {
+      const installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = () => {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See https://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(error => {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl).then(response => {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    const contentType = response.headers.get('content-type');
+
+    if (response.status === 404 || contentType != null && contentType.indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(registration => {
+        registration.unregister().then(() => {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(() => {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
+  }
+}
+
+/***/ }),
+
+/***/ 1:
+/*!**************************************************************************************************************!*\
+  !*** multi (webpack)/hot/dev-server.js ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\tudor\OneDrive\Desktop\Talk\talk\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\tudor\OneDrive\Desktop\Talk\talk\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\tudor\OneDrive\Desktop\Talk\talk\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[1,"runtime-main",0]]]);
+//# sourceMappingURL=main.chunk.js.map
