@@ -221,7 +221,6 @@ export function get_conversation(address, name) {
 
 export function addContact(name, uid, contact_id) {
   console.log(uid);
-  contacts_length = 0;
   db.ref("/contacts")
     .once("value", (snapshot) => {
       snapshot.forEach(function (childSnapshot) {
@@ -244,20 +243,22 @@ export function addContact(name, uid, contact_id) {
       }
     });
 
-  db.ref(`/contacts`).once("value", (snapshot) => {
-    contactList = [];
-    snapshot.forEach(function (childSnapshot) {
-      if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
-        const name = childSnapshot.val().name;
-        const id = childSnapshot.val().contact_id;
-        contactList.push({
-          name,
-          id,
-        });
-      }
+  if (contacts_length < 1) {
+    db.ref(`/contacts`).once("value", (snapshot) => {
+      contactList = [];
+      snapshot.forEach(function (childSnapshot) {
+        if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
+          const name = childSnapshot.val().name;
+          const id = childSnapshot.val().contact_id;
+          contactList.push({
+            name,
+            id,
+          });
+        }
+      });
+      load_contacts(contactList);
     });
-    load_contacts(contactList);
-  });
+  }
 }
 
 export function load_contactList() {
