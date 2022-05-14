@@ -18,7 +18,7 @@ import { connect } from "react-redux";
 import { add_message } from "./redux/message/action";
 import { updateMessages } from "./components/messages";
 import { updateChat } from "./pages/main_page";
-import { load_contacts } from "./components/contacts_section";
+import { load_contacts } from "./components/contacts_section/contacts_section";
 
 const firebaseapp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseapp.auth();
@@ -220,6 +220,7 @@ export function get_conversation(address, name) {
 }
 
 export function addContact(name, uid, contact_id) {
+  contacts_length = [];
   console.log(uid);
   db.ref("/contacts")
     .once("value", (snapshot) => {

@@ -1,11 +1,11 @@
 import React from "react";
 import "./contacts_section.css";
-import UserItem from "./userItem";
-import Profile from "../pages/profile/profile";
-import Contact_item from "./contact/contact_item";
-import Clear from '../Icons/x.svg';
+import UserItem from "../userItem";
+import Profile from "../../pages/profile/profile";
+import Contact_item from "../contact/contact_item";
+import Clear from '../../Icons/x.svg';
 import { connect } from "react-redux";
-import { add_message } from "../redux/message/action";
+import { add_message } from "../../redux/message/action";
 
 
 class contacts extends React.Component{

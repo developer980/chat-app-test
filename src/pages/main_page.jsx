@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import "./mainPage.css";
 import ChatSection from "../components/chatSection/chatSection";
-import Contacts from "../components/contacts_section";
+import Contacts from "../components/contacts_section/contacts_section";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Message_input from "../components/message_input/message_input";

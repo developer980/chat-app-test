@@ -6,7 +6,7 @@ import { selectUser } from "../redux/userSelect/action";
 import { get_conversation } from "../App";
 import message_input from "./message_input/message_input";
 import { addContact } from "../App";
-import { clearSearch } from "./contacts_section";
+import { clearSearch } from "./contacts_section/contacts_section";
 
 function getConv(payload){
    /// props.selectUser(payload)
