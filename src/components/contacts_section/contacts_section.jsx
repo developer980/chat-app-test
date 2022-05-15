@@ -5,7 +5,6 @@ import Profile from "../../pages/profile/profile";
 import Contact_item from "../contact/contact_item";
 import Clear from '../../Icons/x.svg';
 import { connect } from "react-redux";
-import { add_message } from "../../redux/message/action";
 
 
 class contacts extends React.Component{
@@ -16,6 +15,7 @@ class contacts extends React.Component{
             value:'',
             display:'list',
             contact_list:[],
+            key:0,
         }
     }
 
@@ -35,6 +35,7 @@ class contacts extends React.Component{
        console.log(this.state.value);
     //    userList[0]?
     //    console.log(userList[0].name):console.log("none");
+    //console.log(this.state.contact_list);
 
         return(
             
@@ -55,23 +56,27 @@ class contacts extends React.Component{
                  this.state.value?
                     userList.filter(item=> item.name.includes(this.state.value)).map(
                         item =>{
+                        this.state.key+=1;
                             return(
                                 <UserItem
                                 name = {item.name}
                                 id = {item.id}
                                 section = {this.state.value}
                                 uid = {user.uid}
+                                key ={this.state.key}
                                 />
                             )
                         }
                     ):this.state.contact_list? 
                     this.state.contact_list.map(
                         item =>{
+                        this.state.key+=1;
                             return(
                                 <Contact_item name = {item.name}
                                 id = {item.id}
                                 uid = {user.uid}
-                                messages = {messages}/>
+                                messages = {messages}
+                                key ={this.state.key}/>
                             )
                         }
                     )
@@ -104,9 +109,15 @@ export function changeDisplay(display){
     window.contacts_section.setState({display});
 }
 
-function mapDispatchToProps(dispatch){
-    return {add_message : (payload) => dispatch(add_message(payload)),}
+// function mapDispatchToProps(dispatch){
+//     return {add_message : (payload) => dispatch(add_message(payload)),}
+// }
+
+function mapStateToProps(state){
+    return{
+        messages:state.msg.message_list
+    }
 }
 
 
-export default contacts;
+export default connect(mapStateToProps, null) (contacts);

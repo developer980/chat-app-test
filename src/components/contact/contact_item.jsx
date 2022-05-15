@@ -10,9 +10,10 @@ import ProfilePic from "../../Icons/profile.svg";
 function contact_item(props){
     const{name, id, uid, messages, latest_message} = props;
     // console.log('Name = ' + name, 'id = ' + id);
-    console.log(id);
+    //console.log(id);
     let contact_messages = [];
     let sender = [];
+    
     messages.map(message =>{
         if((uid == message.from && id ==message.to)||
         (id == message.from && uid ==message.to))
@@ -21,6 +22,7 @@ function contact_item(props){
              sender.push(message.from);
         }
     });
+   // console.log(messages);
     return(
         <button className="contactItem"
         onClick = {() => getUser(props, name, id, uid)}>
@@ -56,10 +58,5 @@ export function mapDispatchToProps(dispatch){
     }
 }
 
-// export function mapStateToProps(state){
-//     return{
-
-//     }
-// }
 
 export default connect(null, mapDispatchToProps)(contact_item);

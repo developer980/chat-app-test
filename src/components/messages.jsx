@@ -11,6 +11,7 @@ class messages extends React.Component{
         window.messages_component = this;
         this.state = {
             messages:[],
+         //   key:0,
         }
     }
 
@@ -28,10 +29,12 @@ class messages extends React.Component{
                 {
                     message_list?
                 message_list.map(message=>{
+                   // this.state.key+=1;
                    // console.log(message.key);
                     if(message.to == conv_id && message.from == user.uid){
                         return(
-                            <div>
+                            <div
+                            key = {message.key}>
                         <MyMessage 
                         text = {message.text}
                         id = {user.uid}
@@ -42,7 +45,8 @@ class messages extends React.Component{
                     }                    
                     else if(message.to == user.uid && message.from == conv_id){
                         return(
-                            <div>
+                            <div
+                            key = {message.key}>
                         <OtherMessage 
                         text = {message.text}
                         name = {conv_name}

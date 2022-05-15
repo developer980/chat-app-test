@@ -42,8 +42,6 @@ class App extends React.Component {
     };
   }
 
-  // componentWill() {}
-
   updateList(messages) {
     this.setState({ messages: messages });
     updateChat(messages);
@@ -52,7 +50,6 @@ class App extends React.Component {
   updateUsers(users) {
     this.setState({ users: users });
   }
-  // func();
 
   render() {
     const { history } = this.props;
@@ -93,10 +90,30 @@ let to;
 let contactList = [];
 let contacts_length = 0;
 let display = "";
+let k = 0;
 
 export function changeDisplay(val) {
   display = val;
 }
+
+db.ref(`/contacts`).on("value", (snapshot) => {
+  if (window.mainComponent.props.user) {
+    contactList = [];
+    snapshot.forEach(function (childSnapshot) {
+      if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
+        const name = childSnapshot.val().name;
+        const id = childSnapshot.val().contact_id;
+        contactList.push({
+          name,
+          id,
+        });
+      }
+    });
+
+    load_contacts(contactList);
+    // console.log(contactList);
+  }
+});
 
 mesRef.on("value", (snapshot) => {
   if (window.mainComponent.props.user) {
@@ -104,25 +121,42 @@ mesRef.on("value", (snapshot) => {
     snapshot.forEach(function (childSnapshot) {
       const text = childSnapshot.val().text;
       const key = childSnapshot.key;
-      from = childSnapshot.val().from;
-      to = childSnapshot.val().to;
+      const from = childSnapshot.val().from;
+      const to = childSnapshot.val().to;
+      const from_name = childSnapshot.val().from_name;
       mesArray.push({
         text,
         from,
         to,
         key,
+        from_name,
       });
-      if (window.mainComponent.props.user.uid == childSnapshot.val().to) {
-        addContact(
-          childSnapshot.val().from_name,
-          window.mainComponent.props.user.uid,
-          childSnapshot.val().from
-        );
-      }
     });
     window.mainComponent.updateList(mesArray);
+    console.log(mesArray);
+    console.log(contactList);
+    for (let i = 0; i < mesArray.length; i++) {
+      let length = 0;
+      const x = i;
+
+      if (window.mainComponent.props.user.uid == mesArray[i].to) {
+        for (let j = 0; j < contactList.length; j++) {
+          if (mesArray[x].from == contactList[j].id) {
+            length++;
+          }
+        }
+        if (length < 1) {
+          db.ref(`/contacts`).push({
+            contact_id: mesArray[i].from,
+            name: mesArray[i].from_name,
+            uid: window.mainComponent.props.user.uid,
+          });
+        }
+      }
+    }
   }
 });
+// .ten(() => {});
 
 const userRef = db.ref("/users");
 let userList = [];
@@ -139,26 +173,6 @@ userRef.on("value", (snapshot) => {
     });
   });
   window.mainComponent.setState({ users: userList });
-  // if (window.mainComponent.props.user) {
-  //   uid = window.mainComponent.props.user.uid;
-  // }
-});
-
-db.ref(`/contacts`).on("value", (snapshot) => {
-  if (window.mainComponent.props.user) {
-    contactList = [];
-    snapshot.forEach(function (childSnapshot) {
-      if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
-        const name = childSnapshot.val().name;
-        const id = childSnapshot.val().contact_id;
-        contactList.push({
-          name,
-          id,
-        });
-      }
-    });
-    load_contacts(contactList);
-  }
 });
 
 export function writeUserInfo() {
@@ -196,7 +210,6 @@ export function writeUserInfo() {
         id,
       });
     }
-
     load_contactList();
   }
 }
@@ -220,21 +233,28 @@ export function get_conversation(address, name) {
 }
 
 export function addContact(name, uid, contact_id) {
-  contacts_length = [];
+  contacts_length = 0;
+  k += 1;
+  console.log("K: ", k);
+  console.log(contactList);
+  //contactList = [];
   console.log(uid);
   db.ref("/contacts")
     .once("value", (snapshot) => {
       snapshot.forEach(function (childSnapshot) {
-        if (
-          childSnapshot.val().contact_id == contact_id &&
-          childSnapshot.val().uid == uid
-        ) {
-          contacts_length++;
+        if (contacts_length < 1) {
+          if (
+            contact_id == childSnapshot.val().contact_id &&
+            uid == childSnapshot.val().uid
+          ) {
+            contacts_length++;
+          }
           console.log(contacts_length);
         }
       });
     })
     .then(() => {
+      //console.log("Final: " + contacts_length);
       if (contacts_length < 1) {
         db.ref(`/contacts`).push({
           name,
@@ -243,6 +263,9 @@ export function addContact(name, uid, contact_id) {
         });
       }
     });
+  for (const contact in contactList) {
+    console.log(contact.hasOwnProperty(name));
+  }
 
   if (contacts_length < 1) {
     db.ref(`/contacts`).once("value", (snapshot) => {
@@ -257,6 +280,7 @@ export function addContact(name, uid, contact_id) {
           });
         }
       });
+
       load_contacts(contactList);
     });
   }

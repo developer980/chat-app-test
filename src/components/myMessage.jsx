@@ -7,14 +7,6 @@ import remove from '../Icons/x.svg';
 
 function myMessage(props){
     const{text, id, code} = props;
-    // const width = useTextWidth({text, font: '20px Times'})
-    // console.log(text[text.length - 1]);
-    console.log(code);
-    //getWidth(text)
-    //console.log(text.offsetWidth);
-    // let message = document.getElementsByClassName("my-message");
-    // message = message.replace(/  /g, "[sp] [sp]")
-    // message = message.replace(/\n/g, "[sp] [sp]")
 
     return(
         <div className="message-set">
@@ -27,10 +19,4 @@ function myMessage(props){
         </div>
     )
 }
-
-// function getWidth(text){
-//     text.innerHTML = this;
-//     console.log(text.offsetWidth);
-// }
-
 export default myMessage;

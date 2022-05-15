@@ -17,10 +17,6 @@ class Main_page extends React.Component{
     }
     render(){
         const {user, signInWithGoogle, signInWithFacebook, writeUserData, messages, userList, name, signOut} = this.props;
-      //  console.log(name);
-      //  console.log(user);
-        // console.log(messages);
-        // console.log(userList);
         return(
             <div className="main">
                 {user ? 
@@ -32,7 +28,6 @@ class Main_page extends React.Component{
                         <Contacts userList = {userList}
                         user = {user}
                         signOut = {signOut}
-                        messages = {messages}
                         >
                         </Contacts>
                         {
@@ -46,7 +41,6 @@ class Main_page extends React.Component{
                             </ChatSection> :<img className = "placeHolder" src = {Background}></img>
                         }
                     </div>
-                {/* <button onClick={()=> (console.log(messages))}>Print</button> */}
                 </Layout>
                 :
                 <SignIn
@@ -77,4 +71,3 @@ function mapDispatchToProps(dispatch){
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main_page);
-//export default Main_page;
