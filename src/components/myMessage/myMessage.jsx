@@ -1,8 +1,7 @@
 import React from "react";
 import "./myMessage.css";
-import { useTextWidth } from '@imagemarker/use-text-width';
-import { remove_message } from "../App";
-import remove from '../Icons/x.svg';
+import { remove_message } from "../../App";
+import remove from '../../Icons/x.svg';
 
 
 function myMessage(props){

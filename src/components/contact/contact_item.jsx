@@ -3,8 +3,6 @@ import './contact_item.css';
 import { connect } from "react-redux";
 import { selectUser } from "../../redux/userSelect/action";
 import { get_conversation } from "../../App";
-import message_input from ".././message_input/message_input";
-import { addContact } from "../../App";
 import ProfilePic from "../../Icons/profile.svg";
 
 function contact_item(props){

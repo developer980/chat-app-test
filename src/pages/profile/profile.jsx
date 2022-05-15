@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import './profile.css';
 import profilePic from '../../Icons/profile.svg';
-import Layout from '../../components/Layout';
 import { changeDisplay } from "../../components/contacts_section/contacts_section";
 import GoBack from '../../Icons/go-back.svg';
 import { selectUser } from "../../redux/userSelect/action";

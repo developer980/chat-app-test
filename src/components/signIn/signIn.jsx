@@ -1,8 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./signIn.css";
-import { connect } from "react-redux";
-import { createUser } from "../../redux/User/action";
 import { load_contactList, writeUserInfo } from "../../App";
 import Google_icon from"../../Icons/google.svg"; 
 

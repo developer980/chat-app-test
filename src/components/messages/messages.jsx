@@ -1,9 +1,9 @@
 import React from "react";
 import "./messages.css";
 import { connect } from "react-redux";
-import MyMessage from './myMessage';
-import { readUserData } from "../App";
-import OtherMessage from "./otherMessage";
+import MyMessage from '../myMessage/myMessage';
+import { readUserData } from "../../App";
+import OtherMessage from "../otherMessage/otherMessage";
 
 class messages extends React.Component{
     constructor(props){

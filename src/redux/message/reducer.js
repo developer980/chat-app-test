@@ -1,4 +1,4 @@
-import messages from "../../components/messages";
+import messages from "../../components/messages/messages";
 
 const initialState = {
   message_list: [],

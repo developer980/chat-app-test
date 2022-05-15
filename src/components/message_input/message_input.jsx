@@ -1,9 +1,6 @@
 import React, {useState} from "react";
 import "./message-input.css";
-import SendBtn from "../../Icons/sendBtn.svg"
-import { add_message } from "../../redux/message/action";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import SendBtn from "../../Icons/sendBtn.svg";
 import { writeUserData } from "../../App";
 //import App from "../../App";
 

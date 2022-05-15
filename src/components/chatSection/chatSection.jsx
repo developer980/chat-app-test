@@ -1,7 +1,7 @@
 import React from "react";
 import "./chatSection.css";
 import Message_input from "../message_input/message_input";
-import Messages from ".././messages";
+import Messages from "../messages/messages";
 import Conv_header from "../conv_header/conv_header";
 
 function chatSection(props){

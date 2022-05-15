@@ -1,6 +1,6 @@
 import React from "react";
 import "./contacts_section.css";
-import UserItem from "../userItem";
+import UserItem from "../userItem/userItem";
 import Profile from "../../pages/profile/profile";
 import Contact_item from "../contact/contact_item";
 import Clear from '../../Icons/x.svg';

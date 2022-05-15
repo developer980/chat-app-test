@@ -1,14 +1,14 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout/Layout";
 import "./mainPage.css";
-import ChatSection from "../components/chatSection/chatSection";
-import Contacts from "../components/contacts_section/contacts_section";
+import ChatSection from "../../components/chatSection/chatSection";
+import Contacts from "../../components/contacts_section/contacts_section";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import Message_input from "../components/message_input/message_input";
-import SignIn from "../components/signIn/signIn";
-import { add_message } from "../redux/message/action";
-import Background from'../Icons/background.svg';
+import Message_input from "../../components/message_input/message_input";
+import SignIn from "../../components/signIn/signIn";
+import { add_message } from "../../redux/message/action";
+import Background from'../../Icons/background.svg';
 
 class Main_page extends React.Component{
     constructor(props){

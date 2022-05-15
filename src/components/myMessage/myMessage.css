@@ -14,12 +14,10 @@
     margin: 5px;
     float:right;
     box-sizing: border-box;
-    /* display:flex;
-    flex-direction: column; */
     white-space: wrap;
-    /* height:300px; */
     overflow:initial;
     word-wrap: break-word;
+    transition: all 0.25s;
 }
 
 .message-set{
@@ -35,6 +33,10 @@
 
 .remove-btn{
     width:15px;
+}
+
+.message-set:hover > div{
+    background-color: #319775;
 }
 
 .message-set:hover > button{

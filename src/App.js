@@ -5,7 +5,7 @@ import "./App.css";
 import SignIn from "./components/signIn/signIn";
 import Profile from "./pages/profile/profile";
 import File from "./pages/File";
-import Main_page from "./pages/main_page";
+import Main_page from "./pages/main_page/main_page";
 import withFirebaseAuth from "react-with-firebase-auth";
 //
 import * as firebase from "firebase/app";
@@ -16,8 +16,8 @@ import { useState, useEffect } from "react";
 import { onSnapshot, collection } from "@firebase/firestore";
 import { connect } from "react-redux";
 import { add_message } from "./redux/message/action";
-import { updateMessages } from "./components/messages";
-import { updateChat } from "./pages/main_page";
+import { updateMessages } from "./components/messages/messages";
+import { updateChat } from "./pages/main_page/main_page";
 import { load_contacts } from "./components/contacts_section/contacts_section";
 
 const firebaseapp = firebase.initializeApp(firebaseConfig);
@@ -156,7 +156,6 @@ mesRef.on("value", (snapshot) => {
     }
   }
 });
-// .ten(() => {});
 
 const userRef = db.ref("/users");
 let userList = [];

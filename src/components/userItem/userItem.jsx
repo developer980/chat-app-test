@@ -1,12 +1,12 @@
 import React from "react";
 import "./userItem.css";
-import ProfilePic from "../Icons/profile.svg";
+import ProfilePic from "../../Icons/profile.svg";
 import { connect } from "react-redux";
-import { selectUser } from "../redux/userSelect/action";
-import { get_conversation } from "../App";
-import message_input from "./message_input/message_input";
-import { addContact } from "../App";
-import { clearSearch } from "./contacts_section/contacts_section";
+import { selectUser } from "../../redux/userSelect/action";
+import { get_conversation } from "../../App";
+import message_input from "../message_input/message_input";
+import { addContact } from "../../App";
+import { clearSearch } from "../contacts_section/contacts_section";
 
 function getConv(payload){
    /// props.selectUser(payload)
