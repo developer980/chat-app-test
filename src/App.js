@@ -211,6 +211,19 @@ export function writeUserInfo() {
     }
     load_contactList();
   }
+  userRef.once("value", (snapshot) => {
+    length = 0;
+    userList = [];
+    snapshot.forEach(function (childSnapshot) {
+      const name = childSnapshot.val().name;
+      const id = childSnapshot.val().id;
+      userList.push({
+        name,
+        id,
+      });
+    });
+    window.mainComponent.setState({ users: userList });
+  });
 }
 
 export function writeUserData(text, uid, name) {
