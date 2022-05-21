@@ -137,9 +137,9 @@ mesRef.on("value", (snapshot) => {
     snapshot.forEach(function (childSnapshot) {
       const text = childSnapshot.val().text;
       const key = childSnapshot.key;
-      let from = childSnapshot.val().from;
+      const from = childSnapshot.val().from;
       const to = childSnapshot.val().to;
-      let from_name = childSnapshot.val().from_name;
+      const from_name = childSnapshot.val().from_name;
       mesArray.push({
         text,
         from,
@@ -147,6 +147,15 @@ mesRef.on("value", (snapshot) => {
         key,
         from_name,
       });
+      if (to == window.mainComponent.props.user.uid) {
+        if (contactList.filter((contact) => contact.id == from).length < 1) {
+          db.ref(`/contacts/`).push({
+            contact_id: from,
+            name: from_name,
+            uid: window.mainComponent.props.user.uid,
+          });
+        }
+      }
       console.log(
         contactList.includes({
           name: "Baby Yoda",
@@ -158,18 +167,9 @@ mesRef.on("value", (snapshot) => {
     console.log(mesArray);
     console.log(contactList);
   }
-  for (let i = 0; i < mesArray.length; i++) {
-    if (
-      contactList.filter((contact) => contact.id == mesArray[i].from).length ==
-      0
-    ) {
-      db.ref(`/contacts/`).push({
-        contact_id: mesArray[i].from,
-        name: mesArray[i].from_name,
-        uid: window.mainComponent.props.user.uid,
-      });
-    }
-  }
+  // for (let i = 0; i < mesArray.length; i++) {
+
+  // }
   console.log("checked");
 });
 export function writeUserInfo() {
