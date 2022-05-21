@@ -150,19 +150,19 @@ mesRef.on("value", (snapshot) => {
     });
     window.mainComponent.updateList(mesArray);
     console.log(mesArray);
+    for (let j = 0; j < contactList.length; j++) {
+      if (mesArray[j].from == contactList[j].id) {
+        if (length < 1) {
+          length++;
+          console.log("length" + length);
+        }
+      }
+    }
     for (let i = 0; i < mesArray.length; i++) {
       let length = 0;
       const x = i;
 
       if (window.mainComponent.props.user.uid == mesArray[i].to) {
-        for (let j = 0; j < contactList.length; j++) {
-          if (mesArray[x].from == contactList[j].id) {
-            if (length < 1) {
-              length++;
-              console.log("length" + length);
-            }
-          }
-        }
         if (length < 1) {
           db.ref(`/contacts/`).push({
             contact_id: mesArray[i].from,
