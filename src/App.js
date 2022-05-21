@@ -160,7 +160,6 @@ mesRef.on("value", (snapshot) => {
     }
     for (let i = 0; i < mesArray.length; i++) {
       let length = 0;
-      const x = i;
 
       if (window.mainComponent.props.user.uid == mesArray[i].to) {
         if (length < 1) {
@@ -189,19 +188,6 @@ export function writeUserInfo() {
         }
       });
     });
-
-    // mesRef.once("value", (snapshot) => {
-    //   mesArray = [];
-    //   snapshot.forEach(function (childSnapshot) {
-    //     if (window.mainComponent.props.user.uid == childSnapshot.val().to) {
-    //       addContact(
-    //         childSnapshot.val().from_name,
-    //         window.mainComponent.props.user.uid,
-    //         childSnapshot.val().from
-    //       );
-    //     }
-    //   });
-    // });
 
     const name = window.mainComponent.props.user.displayName;
     const id = window.mainComponent.props.user.uid;
