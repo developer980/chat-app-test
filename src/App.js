@@ -137,9 +137,9 @@ mesRef.on("value", (snapshot) => {
     snapshot.forEach(function (childSnapshot) {
       const text = childSnapshot.val().text;
       const key = childSnapshot.key;
-      const from = childSnapshot.val().from;
+      let from = childSnapshot.val().from;
       const to = childSnapshot.val().to;
-      const from_name = childSnapshot.val().from_name;
+      let from_name = childSnapshot.val().from_name;
       mesArray.push({
         text,
         from,
@@ -147,32 +147,29 @@ mesRef.on("value", (snapshot) => {
         key,
         from_name,
       });
+      console.log(
+        contactList.includes({
+          name: "Baby Yoda",
+          id: "naTZGPCcSGcY2LR6ZKystqMRM9n1",
+        })
+      );
     });
     window.mainComponent.updateList(mesArray);
     console.log(mesArray);
-    for (let j = 0; j < contactList.length; j++) {
-      if (mesArray[j].from == contactList[j].id) {
-        if (length < 1) {
-          length++;
-          console.log("length" + length);
-        }
-      }
-    }
-    for (let i = 0; i < mesArray.length; i++) {
-      let length = 0;
-
-      if (window.mainComponent.props.user.uid == mesArray[i].to) {
-        if (length < 1) {
-          db.ref(`/contacts/`).push({
-            contact_id: mesArray[i].from,
-            name: mesArray[i].from_name,
-            uid: window.mainComponent.props.user.uid,
-          });
-        }
-      }
+    console.log(contactList);
+  }
+  for (let i = 0; i < mesArray.length; i++) {
+    if (
+      contactList.filter((contact) => contact.id == mesArray[i].from).length ==
+      0
+    ) {
+      db.ref(`/contacts/`).push({
+        contact_id: mesArray[i].from,
+        name: mesArray[i].from_name,
+        uid: window.mainComponent.props.user.uid,
+      });
     }
   }
-
   console.log("checked");
 });
 export function writeUserInfo() {

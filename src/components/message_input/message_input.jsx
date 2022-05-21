@@ -20,7 +20,12 @@ class message_input extends React.Component{
         const {user} = this.props;
         return(
             <div className = "m-input">
-                <input type="text" placeholder="Type a message" value = {text} className = "message" onChange={(event)=> this.setMessage(event)} />
+                <input type="text" placeholder="Type a message" value = {text} className = "message" 
+                onKeyDown={(event) =>{
+                    if(event.key === 'Enter'){
+                        this.sendMessage(text, user.uid, user.displayName)
+                    }
+                }} onChange={(event)=> this.setMessage(event)} />
                 <button  className="send-btn"
                 onClick={() => 
                 this.sendMessage(text, user.uid, user.displayName)
