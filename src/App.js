@@ -115,6 +115,22 @@ db.ref(`/contacts/`).on("value", (snapshot) => {
   }
 });
 
+const userRef = db.ref("/users/");
+let userList = [];
+
+userRef.on("value", (snapshot) => {
+  length = 0;
+  userList = [];
+  snapshot.forEach(function (childSnapshot) {
+    const name = childSnapshot.val().name;
+    const id = childSnapshot.val().id;
+    userList.push({
+      name,
+      id,
+    });
+  });
+  window.mainComponent.setState({ users: userList });
+});
 mesRef.on("value", (snapshot) => {
   if (window.mainComponent.props.user) {
     mesArray = [];
@@ -134,7 +150,6 @@ mesRef.on("value", (snapshot) => {
     });
     window.mainComponent.updateList(mesArray);
     console.log(mesArray);
-    console.log(contactList);
     for (let i = 0; i < mesArray.length; i++) {
       let length = 0;
       const x = i;
@@ -142,7 +157,10 @@ mesRef.on("value", (snapshot) => {
       if (window.mainComponent.props.user.uid == mesArray[i].to) {
         for (let j = 0; j < contactList.length; j++) {
           if (mesArray[x].from == contactList[j].id) {
-            length++;
+            if (length < 1) {
+              length++;
+              console.log("length" + length);
+            }
           }
         }
         if (length < 1) {
@@ -155,25 +173,9 @@ mesRef.on("value", (snapshot) => {
       }
     }
   }
+
+  console.log("checked");
 });
-
-const userRef = db.ref("/users/");
-let userList = [];
-
-userRef.on("value", (snapshot) => {
-  length = 0;
-  userList = [];
-  snapshot.forEach(function (childSnapshot) {
-    const name = childSnapshot.val().name;
-    const id = childSnapshot.val().id;
-    userList.push({
-      name,
-      id,
-    });
-  });
-  window.mainComponent.setState({ users: userList });
-});
-
 export function writeUserInfo() {
   if (window.mainComponent.props.user) {
     length = 0;
@@ -188,18 +190,18 @@ export function writeUserInfo() {
       });
     });
 
-    mesRef.once("value", (snapshot) => {
-      mesArray = [];
-      snapshot.forEach(function (childSnapshot) {
-        if (window.mainComponent.props.user.uid == childSnapshot.val().to) {
-          addContact(
-            childSnapshot.val().from_name,
-            window.mainComponent.props.user.uid,
-            childSnapshot.val().from
-          );
-        }
-      });
-    });
+    // mesRef.once("value", (snapshot) => {
+    //   mesArray = [];
+    //   snapshot.forEach(function (childSnapshot) {
+    //     if (window.mainComponent.props.user.uid == childSnapshot.val().to) {
+    //       addContact(
+    //         childSnapshot.val().from_name,
+    //         window.mainComponent.props.user.uid,
+    //         childSnapshot.val().from
+    //       );
+    //     }
+    //   });
+    // });
 
     const name = window.mainComponent.props.user.displayName;
     const id = window.mainComponent.props.user.uid;
@@ -211,6 +213,19 @@ export function writeUserInfo() {
     }
     load_contactList();
   }
+  userRef.once("value", (snapshot) => {
+    length = 0;
+    userList = [];
+    snapshot.forEach(function (childSnapshot) {
+      const name = childSnapshot.val().name;
+      const id = childSnapshot.val().id;
+      userList.push({
+        name,
+        id,
+      });
+    });
+    window.mainComponent.setState({ users: userList });
+  });
 }
 
 export function writeUserData(text, uid, name) {
