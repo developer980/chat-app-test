@@ -96,7 +96,7 @@ export function changeDisplay(val) {
   display = val;
 }
 
-db.ref(`/contacts`).on("value", (snapshot) => {
+db.ref(`/contacts/`).on("value", (snapshot) => {
   if (window.mainComponent.props.user) {
     contactList = [];
     snapshot.forEach(function (childSnapshot) {
@@ -146,7 +146,7 @@ mesRef.on("value", (snapshot) => {
           }
         }
         if (length < 1) {
-          db.ref(`/contacts`).push({
+          db.ref(`/contacts/`).push({
             contact_id: mesArray[i].from,
             name: mesArray[i].from_name,
             uid: window.mainComponent.props.user.uid,
@@ -157,7 +157,7 @@ mesRef.on("value", (snapshot) => {
   }
 });
 
-const userRef = db.ref("/users");
+const userRef = db.ref("/users/");
 let userList = [];
 
 userRef.on("value", (snapshot) => {
@@ -177,7 +177,7 @@ userRef.on("value", (snapshot) => {
 export function writeUserInfo() {
   if (window.mainComponent.props.user) {
     length = 0;
-    const userRef = db.ref("/users");
+    const userRef = db.ref("/users/");
     userRef.once("value", (snapshot) => {
       snapshot.forEach(function (childSnapshot) {
         const id = childSnapshot.val().id;
@@ -211,19 +211,19 @@ export function writeUserInfo() {
     }
     load_contactList();
   }
-  userRef.once("value", (snapshot) => {
-    length = 0;
-    userList = [];
-    snapshot.forEach(function (childSnapshot) {
-      const name = childSnapshot.val().name;
-      const id = childSnapshot.val().id;
-      userList.push({
-        name,
-        id,
-      });
-    });
-    window.mainComponent.setState({ users: userList });
-  });
+  // userRef.once("value", (snapshot) => {
+  //   length = 0;
+  //   userList = [];
+  //   snapshot.forEach(function (childSnapshot) {
+  //     const name = childSnapshot.val().name;
+  //     const id = childSnapshot.val().id;
+  //     userList.push({
+  //       name,
+  //       id,
+  //     });
+  //   });
+  //   window.mainComponent.setState({ users: userList });
+  // });
 }
 
 export function writeUserData(text, uid, name) {
@@ -251,7 +251,7 @@ export function addContact(name, uid, contact_id) {
   console.log(contactList);
   //contactList = [];
   console.log(uid);
-  db.ref("/contacts")
+  db.ref("/contacts/")
     .once("value", (snapshot) => {
       snapshot.forEach(function (childSnapshot) {
         if (contacts_length < 1) {
@@ -268,19 +268,16 @@ export function addContact(name, uid, contact_id) {
     .then(() => {
       //console.log("Final: " + contacts_length);
       if (contacts_length < 1) {
-        db.ref(`/contacts`).push({
+        db.ref(`/contacts/`).push({
           name,
           uid,
           contact_id,
         });
       }
     });
-  for (const contact in contactList) {
-    console.log(contact.hasOwnProperty(name));
-  }
 
   if (contacts_length < 1) {
-    db.ref(`/contacts`).once("value", (snapshot) => {
+    db.ref(`/contacts/`).once("value", (snapshot) => {
       contactList = [];
       snapshot.forEach(function (childSnapshot) {
         if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
@@ -299,7 +296,7 @@ export function addContact(name, uid, contact_id) {
 }
 
 export function load_contactList() {
-  db.ref(`/contacts`).once("value", (snapshot) => {
+  db.ref(`/contacts/`).once("value", (snapshot) => {
     contactList = [];
     snapshot.forEach(function (childSnapshot) {
       if (window.mainComponent.props.user.uid == childSnapshot.val().uid) {
@@ -316,7 +313,7 @@ export function load_contactList() {
 }
 
 export function remove_message(key) {
-  db.ref("/messages").child(key).remove();
+  db.ref("/messages/").child(key).remove();
 }
 
 export default withFirebaseAuth({
