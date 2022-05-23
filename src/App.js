@@ -167,9 +167,6 @@ mesRef.on("value", (snapshot) => {
     console.log(mesArray);
     console.log(contactList);
   }
-  // for (let i = 0; i < mesArray.length; i++) {
-
-  // }
   console.log("checked");
 });
 export function writeUserInfo() {
