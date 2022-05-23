@@ -111,7 +111,6 @@ db.ref(`/contacts/`).on("value", (snapshot) => {
     });
 
     load_contacts(contactList);
-    // console.log(contactList);
   }
 });
 
@@ -231,7 +230,6 @@ export function addContact(name, uid, contact_id) {
   k += 1;
   console.log("K: ", k);
   console.log(contactList);
-  //contactList = [];
   console.log(uid);
   db.ref("/contacts/")
     .once("value", (snapshot) => {
@@ -248,7 +246,6 @@ export function addContact(name, uid, contact_id) {
       });
     })
     .then(() => {
-      //console.log("Final: " + contacts_length);
       if (contacts_length < 1) {
         db.ref(`/contacts/`).push({
           name,
