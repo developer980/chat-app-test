@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# About
 
 The basic model of a functional web chat app
 The app uses firebase to store users data and messages
