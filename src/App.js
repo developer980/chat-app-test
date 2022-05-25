@@ -123,6 +123,7 @@ userRef.on("value", (snapshot) => {
   snapshot.forEach(function (childSnapshot) {
     const name = childSnapshot.val().name;
     const id = childSnapshot.val().id;
+    console.log(childSnapshot.val());
     userList.push({
       name,
       id,
@@ -173,21 +174,27 @@ export function writeUserInfo() {
     length = 0;
     const userRef = db.ref("/users/");
     userRef.once("value", (snapshot) => {
+      length = 0;
+      userList = [];
       snapshot.forEach(function (childSnapshot) {
+        const name = childSnapshot.val().name;
         const id = childSnapshot.val().id;
-        if (id == window.mainComponent.props.user.uid) {
-          length++;
-          console.log(length);
-        }
+        userList.push({
+          name,
+          id,
+        });
       });
+      window.mainComponent.setState({ users: userList });
     });
+    console.log(userList);
 
-    const name = window.mainComponent.props.user.displayName;
-    const id = window.mainComponent.props.user.uid;
-    if (length < 1) {
+    if (
+      userList.filter((user) => user.id == window.mainComponent.props.user.uid)
+        .length == 0
+    ) {
       userRef.push({
-        name,
-        id,
+        name: window.mainComponent.props.user.displayName,
+        id: window.mainComponent.props.user.uid,
       });
     }
     load_contactList();
