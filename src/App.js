@@ -7,7 +7,6 @@ import Profile from "./pages/profile/profile";
 import File from "./pages/File";
 import Main_page from "./pages/main_page/main_page";
 import withFirebaseAuth from "react-with-firebase-auth";
-//
 import * as firebase from "firebase/app";
 import firebaseConfig from "./configs/firebase";
 import { database } from "firebase/database";
@@ -52,7 +51,6 @@ class App extends React.Component {
   }
 
   render() {
-    //const { history } = this.props;
     console.log(this.state);
     console.log(this.props);
     return (
@@ -131,6 +129,7 @@ userRef.on("value", (snapshot) => {
   });
   window.mainComponent.setState({ users: userList });
 });
+
 mesRef.on("value", (snapshot) => {
   if (window.mainComponent.props.user) {
     mesArray = [];
@@ -169,6 +168,7 @@ mesRef.on("value", (snapshot) => {
   }
   console.log("checked");
 });
+
 export function writeUserInfo() {
   if (window.mainComponent.props.user) {
     length = 0;
@@ -199,6 +199,7 @@ export function writeUserInfo() {
     }
     load_contactList();
   }
+
   userRef.once("value", (snapshot) => {
     length = 0;
     userList = [];
@@ -236,8 +237,6 @@ export function addContact(name, uid, contact_id) {
   contacts_length = 0;
   k += 1;
   console.log("K: ", k);
-  console.log(contactList);
-  console.log(uid);
   db.ref("/contacts/")
     .once("value", (snapshot) => {
       snapshot.forEach(function (childSnapshot) {
@@ -275,7 +274,6 @@ export function addContact(name, uid, contact_id) {
           });
         }
       });
-
       load_contacts(contactList);
     });
   }
