@@ -10,6 +10,7 @@ function signIn(props){
         const googleLoginResponse = signInWithGoogle();
         googleLoginResponse.then(()=>{
             writeUserInfo();
+            window.location.reload();
         })
     }
 
