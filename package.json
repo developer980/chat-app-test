@@ -22,6 +22,7 @@
     "react-scripts": "^3.4.4",
     "react-with-firebase-auth": "1.2",
     "redux": "^4.0.4",
+    "typescript": "^3.9.10",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
