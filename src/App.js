@@ -41,6 +41,10 @@ class App extends React.Component {
     };
   }
 
+  componentDitMount(){
+    writeUserInfo();
+  }
+
   updateList(messages) {
     this.setState({ messages: messages });
     updateChat(messages);
@@ -170,8 +174,8 @@ mesRef.on("value", (snapshot) => {
 });
 
 export function writeUserInfo() {
+  //length = 0;
   if (window.mainComponent.props.user) {
-    length = 0;
     const userRef = db.ref("/users/");
     userRef.once("value", (snapshot) => {
       length = 0;
@@ -187,6 +191,7 @@ export function writeUserInfo() {
       window.mainComponent.setState({ users: userList });
     });
     console.log(userList);
+    console.log("mama mea");
 
     if (
       userList.filter((user) => user.id == window.mainComponent.props.user.uid)
@@ -200,19 +205,19 @@ export function writeUserInfo() {
     load_contactList();
   }
 
-  userRef.once("value", (snapshot) => {
-    length = 0;
-    userList = [];
-    snapshot.forEach(function (childSnapshot) {
-      const name = childSnapshot.val().name;
-      const id = childSnapshot.val().id;
-      userList.push({
-        name,
-        id,
-      });
-    });
-    window.mainComponent.setState({ users: userList });
-  });
+  // userRef.once("value", (snapshot) => {
+  //   length = 0;
+  //   userList = [];
+  //   snapshot.forEach(function (childSnapshot) {
+  //     const name = childSnapshot.val().name;
+  //     const id = childSnapshot.val().id;
+  //     userList.push({
+  //       name,
+  //       id,
+  //     });
+  //   });
+  //   window.mainComponent.setState({ users: userList });
+  // });
 }
 
 export function writeUserData(text, uid, name) {
