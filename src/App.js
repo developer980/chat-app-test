@@ -41,8 +41,9 @@ class App extends React.Component {
     };
   }
 
-  componentDitMount(){
-    writeUserInfo();
+  componentDidMount(){
+
+    console.log(userList);
   }
 
   updateList(messages) {
@@ -79,6 +80,8 @@ class App extends React.Component {
     );
   }
 }
+
+// console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
 let current_length = 0;
 let length = 0;
@@ -118,6 +121,7 @@ db.ref(`/contacts/`).on("value", (snapshot) => {
 
 const userRef = db.ref("/users/");
 let userList = [];
+let duplicates_count = 0;
 
 userRef.on("value", (snapshot) => {
   length = 0;
@@ -131,6 +135,8 @@ userRef.on("value", (snapshot) => {
       id,
     });
   });
+  console.log(userList);
+  removeDublicates();
   window.mainComponent.setState({ users: userList });
 });
 
@@ -174,11 +180,11 @@ mesRef.on("value", (snapshot) => {
 });
 
 export function writeUserInfo() {
-  //length = 0;
+  length = 0;
   if (window.mainComponent.props.user) {
     const userRef = db.ref("/users/");
     userRef.once("value", (snapshot) => {
-      length = 0;
+      // length = 0;
       userList = [];
       snapshot.forEach(function (childSnapshot) {
         const name = childSnapshot.val().name;
@@ -218,6 +224,21 @@ export function writeUserInfo() {
   //   });
   //   window.mainComponent.setState({ users: userList });
   // });
+}
+
+function removeDublicates(){
+  console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+  for(let i = 0; i < userList.length; i++){
+    if(userList[i].id == window.mainComponent.props.user.uid){
+      duplicates_count++;
+      if(duplicates_count>0){
+        console.log(userList[i].name);
+        userList.splice(i, 1);
+      }
+    }
+    // console.log(userList[i].id)
+  }
+  console.log(duplicates_count)
 }
 
 export function writeUserData(text, uid, name) {

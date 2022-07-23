@@ -15,6 +15,10 @@ class messages extends React.Component{
         }
     }
 
+    compoentDitMount(){
+        console.log("mesagesssss")
+    }
+
     render(){
         const{user, message_list, conv_id, conv_name} = this.props;
         let list;
