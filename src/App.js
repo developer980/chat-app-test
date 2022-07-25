@@ -21,7 +21,7 @@ import { load_contacts } from "./components/contacts_section/contacts_section";
 
 const firebaseapp = firebase.initializeApp(firebaseConfig);
 const firebaseAppAuth = firebaseapp.auth();
-const db = firebaseapp.database();
+export const db = firebaseapp.database();
 const providers = {
   googleProvider: new firebase.auth.GoogleAuthProvider(),
   emailProvider: new firebase.auth.EmailAuthProvider(),
@@ -136,7 +136,7 @@ userRef.on("value", (snapshot) => {
     });
   });
   console.log(userList);
-  removeDublicates();
+  // removeDublicates();
   window.mainComponent.setState({ users: userList });
 });
 
