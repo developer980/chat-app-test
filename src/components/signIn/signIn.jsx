@@ -60,8 +60,6 @@ class signIn extends React.Component{
                         window.location.reload();
                     }
                 }
-                // //
-                // window.location.reload();
             )
             
         })

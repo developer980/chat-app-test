@@ -1,7 +1,5 @@
 {
   "projects": {
-    "default": "talk-database-33d34",
-    "chatApp": "talk-database-33d34"
-  },
-  "targets": {}
+    "default": "talk-database-33d34"
+  }
 }
