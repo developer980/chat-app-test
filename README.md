@@ -3,6 +3,7 @@
 ## The basic model of a functional web chat app
 
 - The users can login with their Google account and search users by their usernames and chat with them.
+- The app is also live at: https://talk-database-33d34.web.app/
 
 ![2022-05-05 (2)](https://user-images.githubusercontent.com/91996303/233830652-cb312269-1b9e-42b6-8ccc-3be0ff44af94.png)
 
@@ -12,4 +13,3 @@
 
 ![2022-10-07](https://user-images.githubusercontent.com/91996303/233830544-332933e6-0e8b-4900-a23c-2d45adcec0b4.png)
 
-The app is also live at: https://talk-database-33d34.web.app/
