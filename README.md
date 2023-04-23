@@ -2,7 +2,7 @@
 
 ## The basic model of a functional web chat app
 
-- The users can login with their Google account and chat with other users
+- The users can login with their Google account and search users by their usernames and chat with them.
 
 ![2022-05-05 (2)](https://user-images.githubusercontent.com/91996303/233830652-cb312269-1b9e-42b6-8ccc-3be0ff44af94.png)
 
